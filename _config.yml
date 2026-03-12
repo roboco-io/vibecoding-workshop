@@ -14,5 +14,6 @@ exclude:
   - reference/
   - .omc/
   - common/Makefile
+  - vendor/
   - "*.pdf"
   - "*.pptx"
