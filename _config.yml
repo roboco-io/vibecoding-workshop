@@ -5,6 +5,8 @@ url: "https://directcloudlab.github.io"
 
 theme: minima
 
+header_pages: []
+
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -13,7 +15,16 @@ exclude:
   - CLAUDE.md
   - reference/
   - .omc/
-  - common/Makefile
   - vendor/
+  - common/Makefile
+  - common/presentation.md
+  - common/ideation.md
+  - common/README.md
+  - common/ModernSoftwareEngineering/
+  - vibecoding-for-developer/PRD.md
+  - vibecoding-for-developer/workshop-flow.md
+  - vibecoding-for-developer/interview-summary.md
+  - vibecoding-for-developer/developer_survey_analysis.md
+  - vibecoding-for-nondeveloper/
   - "*.pdf"
   - "*.pptx"
