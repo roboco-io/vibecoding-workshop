@@ -1,3 +1,8 @@
+---
+layout: default
+title: "내러티브 — 바이브 코딩의 현 주소"
+---
+
 # State of Vibe Coding — 바이브 코딩의 현 주소
 
 ## 발표 개요

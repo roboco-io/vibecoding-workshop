@@ -1,3 +1,8 @@
+---
+layout: default
+title: "바이브 코딩 워크숍 — 학생 가이드"
+---
+
 # 바이브 코딩 워크숍 — 학생 가이드
 
 > 시간: 4시간 (14:00~18:00) | 도구: Claude Code + OMC + OpenSpec + GitHub CLI
