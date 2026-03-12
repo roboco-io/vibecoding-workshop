@@ -1,0 +1,52 @@
+<svg viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+
+  <!-- 5 pillars -->
+
+  <!-- Pillar 1: 모듈성 -->
+  <rect x="20" y="60" width="120" height="100" rx="8" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="80" y="100" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">모듈성</text>
+  <text x="80" y="120" text-anchor="middle" font-size="10" fill="#666">Modularity</text>
+  <text x="80" y="145" text-anchor="middle" font-size="9" fill="#666">분리와 재조합</text>
+
+  <!-- Pillar 2: 응집성 -->
+  <rect x="160" y="60" width="120" height="100" rx="8" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="220" y="100" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">응집성</text>
+  <text x="220" y="120" text-anchor="middle" font-size="10" fill="#666">Cohesion</text>
+  <text x="220" y="145" text-anchor="middle" font-size="9" fill="#666">관련 요소는 한곳에</text>
+
+  <!-- Pillar 3: 관심사 분리 -->
+  <rect x="300" y="60" width="120" height="100" rx="8" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="360" y="95" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">관심사</text>
+  <text x="360" y="113" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">분리</text>
+  <text x="360" y="133" text-anchor="middle" font-size="9" fill="#666">Separation of</text>
+  <text x="360" y="145" text-anchor="middle" font-size="9" fill="#666">Concerns</text>
+
+  <!-- Pillar 4: 추상화 -->
+  <rect x="440" y="60" width="120" height="100" rx="8" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="500" y="95" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">정보 은닉</text>
+  <text x="500" y="113" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">&amp; 추상화</text>
+  <text x="500" y="140" text-anchor="middle" font-size="9" fill="#666">필요한 것만 노출</text>
+
+  <!-- Pillar 5: 결합도 -->
+  <rect x="580" y="60" width="120" height="100" rx="8" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="640" y="100" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">결합도</text>
+  <text x="640" y="120" text-anchor="middle" font-size="10" fill="#666">Coupling</text>
+  <text x="640" y="145" text-anchor="middle" font-size="9" fill="#666">적정 수준의 연결</text>
+
+  <!-- Base bar -->
+  <rect x="20" y="180" width="680" height="40" rx="6" fill="#f5f5f5" stroke="#333" stroke-width="1.8"/>
+  <text x="360" y="206" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">복잡성 관리 — 변화에 유연한 시스템</text>
+
+  <!-- Connecting lines from pillars to base -->
+  <line x1="80" y1="160" x2="80" y2="180" stroke="#333" stroke-width="1.5"/>
+  <line x1="220" y1="160" x2="220" y2="180" stroke="#333" stroke-width="1.5"/>
+  <line x1="360" y1="160" x2="360" y2="180" stroke="#333" stroke-width="1.5"/>
+  <line x1="500" y1="160" x2="500" y2="180" stroke="#333" stroke-width="1.5"/>
+  <line x1="640" y1="160" x2="640" y2="180" stroke="#333" stroke-width="1.5"/>
+
+  <!-- Top label -->
+  <text x="360" y="35" text-anchor="middle" font-size="12" fill="#666">높은 응집도 + 낮은 결합도 = 좋은 설계</text>
+
+  <!-- Bottom note -->
+  <text x="360" y="250" text-anchor="middle" font-size="11" fill="#666">5가지 원칙이 서로 균형을 이룰 때, 유지보수 가능한 소프트웨어가 탄생한다</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg viewBox="0 0 720 300" xmlns="http://www.w3.org/2000/svg" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="8" markerHeight="6" orient="auto-start-reverse">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+
+  <!-- Left box: 학습의 전문가 -->
+  <rect x="40" y="60" width="280" height="180" rx="12" fill="white" stroke="#333" stroke-width="2.5"/>
+  <text x="180" y="100" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">학습의 전문가</text>
+  <text x="180" y="125" text-anchor="middle" font-size="12" fill="#666">Expert in Learning</text>
+  <line x1="80" y1="140" x2="280" y2="140" stroke="#ddd" stroke-width="1"/>
+  <text x="180" y="168" text-anchor="middle" font-size="13" fill="#666">빠르게 피드백을 얻고</text>
+  <text x="180" y="190" text-anchor="middle" font-size="13" fill="#666">반복하고</text>
+  <text x="180" y="212" text-anchor="middle" font-size="13" fill="#666">점진적으로 개선하는 능력</text>
+
+  <!-- Right box: 복잡성 관리의 전문가 -->
+  <rect x="400" y="60" width="280" height="180" rx="12" fill="white" stroke="#333" stroke-width="2.5"/>
+  <text x="540" y="100" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">복잡성 관리의 전문가</text>
+  <text x="540" y="125" text-anchor="middle" font-size="12" fill="#666">Expert in Managing Complexity</text>
+  <line x1="440" y1="140" x2="640" y2="140" stroke="#ddd" stroke-width="1"/>
+  <text x="540" y="168" text-anchor="middle" font-size="13" fill="#666">시스템을 이해 가능하고</text>
+  <text x="540" y="190" text-anchor="middle" font-size="13" fill="#666">변경 가능한 단위로</text>
+  <text x="540" y="212" text-anchor="middle" font-size="13" fill="#666">분해하는 능력</text>
+
+  <!-- Connecting line with + -->
+  <line x1="325" y1="150" x2="395" y2="150" stroke="#333" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <circle cx="360" cy="150" r="16" fill="#f5f5f5" stroke="#333" stroke-width="1.5"/>
+  <text x="360" y="156" text-anchor="middle" font-size="20" font-weight="bold" fill="#333">+</text>
+
+  <!-- Top label -->
+  <text x="360" y="35" text-anchor="middle" font-size="14" fill="#333" font-weight="bold">모던 소프트웨어 엔지니어의 두 가지 축</text>
+
+  <!-- Bottom labels mapping to scientist/learner -->
+  <text x="180" y="272" text-anchor="middle" font-size="12" fill="#666">≈ 과학자 (가설-검증)</text>
+  <text x="540" y="272" text-anchor="middle" font-size="12" fill="#666">≈ 학습자 (지속적 성장)</text>
+</svg>

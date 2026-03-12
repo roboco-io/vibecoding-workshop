@@ -1,0 +1,54 @@
+<svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="8" markerHeight="6" orient="auto-start-reverse">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+
+  <!-- Circular flow: 4 boxes in a cycle -->
+
+  <!-- Box 1: 반복 (top-left) -->
+  <rect x="140" y="30" width="160" height="60" rx="8" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="220" y="55" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">반복</text>
+  <text x="220" y="75" text-anchor="middle" font-size="11" fill="#666">Iteration</text>
+
+  <!-- Box 2: 피드백 (top-right) -->
+  <rect x="420" y="30" width="160" height="60" rx="8" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="500" y="55" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">피드백</text>
+  <text x="500" y="75" text-anchor="middle" font-size="11" fill="#666">Feedback</text>
+
+  <!-- Box 3: 경험주의 / 실험주의 (bottom-right) -->
+  <rect x="420" y="220" width="160" height="60" rx="8" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="500" y="245" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">경험주의</text>
+  <text x="500" y="265" text-anchor="middle" font-size="11" fill="#666">Empiricism</text>
+
+  <!-- Box 4: 점진주의 (bottom-left) -->
+  <rect x="140" y="220" width="160" height="60" rx="8" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="220" y="245" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">점진주의</text>
+  <text x="220" y="265" text-anchor="middle" font-size="11" fill="#666">Incrementalism</text>
+
+  <!-- Arrows: clockwise cycle -->
+  <!-- Top: 반복 → 피드백 -->
+  <line x1="305" y1="60" x2="415" y2="60" stroke="#333" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <!-- Right: 피드백 → 경험주의 -->
+  <line x1="500" y1="95" x2="500" y2="215" stroke="#333" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <!-- Bottom: 경험주의 → 점진주의 -->
+  <line x1="415" y1="250" x2="305" y2="250" stroke="#333" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <!-- Left: 점진주의 → 반복 -->
+  <line x1="220" y1="220" x2="220" y2="95" stroke="#333" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <!-- Center label -->
+  <text x="360" y="155" text-anchor="middle" font-size="13" fill="#666">지속적</text>
+  <text x="360" y="173" text-anchor="middle" font-size="13" fill="#666">개선 사이클</text>
+
+  <!-- Descriptions on each side -->
+  <text x="360" y="42" text-anchor="middle" font-size="10" fill="#666">작게 만들고 고쳐 나가기</text>
+  <text x="630" y="155" text-anchor="middle" font-size="10" fill="#666">빠른 확인과</text>
+  <text x="630" y="168" text-anchor="middle" font-size="10" fill="#666">방향 조정</text>
+  <text x="360" y="298" text-anchor="middle" font-size="10" fill="#666">데이터 기반 의사결정</text>
+  <text x="90" y="155" text-anchor="middle" font-size="10" fill="#666">조금씩</text>
+  <text x="90" y="168" text-anchor="middle" font-size="10" fill="#666">끊임없이</text>
+</svg>

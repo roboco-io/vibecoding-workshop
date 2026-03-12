@@ -1,0 +1,57 @@
+<svg viewBox="0 0 640 440" xmlns="http://www.w3.org/2000/svg" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="8" markerHeight="6" orient="auto-start-reverse">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+
+  <!-- Center AI circle -->
+  <circle cx="320" cy="220" r="48" fill="#f5f5f5" stroke="#333" stroke-width="2.5"/>
+  <text x="320" y="228" text-anchor="middle" font-size="22" font-weight="bold" fill="#333">AI</text>
+
+  <!-- Node 0: 기획 (top) -->
+  <rect x="265" y="35" width="110" height="44" rx="8" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="320" y="63" text-anchor="middle" font-size="15" fill="#333">기획</text>
+
+  <!-- Node 1: 설계 (top-right) -->
+  <rect x="404" y="115" width="110" height="44" rx="8" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="459" y="143" text-anchor="middle" font-size="15" fill="#333">설계</text>
+
+  <!-- Node 2: 구현 (bottom-right) -->
+  <rect x="404" y="275" width="110" height="44" rx="8" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="459" y="303" text-anchor="middle" font-size="15" fill="#333">구현</text>
+
+  <!-- Node 3: 테스트 (bottom) -->
+  <rect x="265" y="355" width="110" height="44" rx="8" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="320" y="383" text-anchor="middle" font-size="15" fill="#333">테스트</text>
+
+  <!-- Node 4: 배포 (bottom-left) -->
+  <rect x="126" y="275" width="110" height="44" rx="8" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="181" y="303" text-anchor="middle" font-size="15" fill="#333">배포</text>
+
+  <!-- Node 5: 운영 (top-left) -->
+  <rect x="126" y="115" width="110" height="44" rx="8" fill="white" stroke="#333" stroke-width="2"/>
+  <text x="181" y="143" text-anchor="middle" font-size="15" fill="#333">운영</text>
+
+  <!-- Dashed lines from center to each node (edge midpoints) -->
+  <line x1="320" y1="172" x2="320" y2="79" stroke="#999" stroke-width="1.2" stroke-dasharray="5,4"/>
+  <line x1="362" y1="193" x2="404" y2="137" stroke="#999" stroke-width="1.2" stroke-dasharray="5,4"/>
+  <line x1="362" y1="247" x2="404" y2="297" stroke="#999" stroke-width="1.2" stroke-dasharray="5,4"/>
+  <line x1="320" y1="268" x2="320" y2="355" stroke="#999" stroke-width="1.2" stroke-dasharray="5,4"/>
+  <line x1="278" y1="247" x2="236" y2="297" stroke="#999" stroke-width="1.2" stroke-dasharray="5,4"/>
+  <line x1="278" y1="193" x2="236" y2="137" stroke="#999" stroke-width="1.2" stroke-dasharray="5,4"/>
+
+  <!-- Arrows between consecutive nodes (clockwise, top/bottom midpoints for side nodes) -->
+  <!-- 기획 → 설계: 기획 right mid → 설계 top mid -->
+  <line x1="375" y1="57" x2="459" y2="115" stroke="#333" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <!-- 설계 → 구현: 설계 bottom mid → 구현 top mid -->
+  <line x1="459" y1="159" x2="459" y2="275" stroke="#333" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <!-- 구현 → 테스트: 구현 bottom mid → 테스트 right mid -->
+  <line x1="459" y1="319" x2="375" y2="377" stroke="#333" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <!-- 테스트 → 배포: 테스트 left mid → 배포 bottom mid -->
+  <line x1="265" y1="377" x2="181" y2="319" stroke="#333" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <!-- 배포 → 운영: 배포 top mid → 운영 bottom mid -->
+  <line x1="181" y1="275" x2="181" y2="159" stroke="#333" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <!-- 운영 → 기획: 운영 top mid → 기획 left mid -->
+  <line x1="181" y1="115" x2="265" y2="57" stroke="#333" stroke-width="1.8" marker-end="url(#arrow)"/>
+</svg>

@@ -1,0 +1,65 @@
+<svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg" font-family="'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 7" refX="10" refY="3.5" markerWidth="8" markerHeight="6" orient="auto-start-reverse">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+
+  <!-- Master Agent bar -->
+  <rect x="40" y="20" width="640" height="50" rx="6" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+  <text x="360" y="50" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Master Agent</text>
+
+  <!-- Connecting line from master to phases -->
+  <line x1="160" y1="70" x2="160" y2="100" stroke="#333" stroke-width="1.5"/>
+  <line x1="360" y1="70" x2="360" y2="100" stroke="#333" stroke-width="1.5"/>
+  <line x1="560" y1="70" x2="560" y2="100" stroke="#333" stroke-width="1.5"/>
+
+  <!-- Phase 1: Inception -->
+  <rect x="50" y="100" width="200" height="200" rx="8" fill="white" stroke="#333" stroke-width="2"/>
+  <rect x="50" y="100" width="200" height="40" rx="8" fill="#e8e8e8" stroke="#333" stroke-width="2"/>
+  <text x="150" y="126" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">Inception</text>
+
+  <text x="70" y="168" font-size="13" fill="#555">Inception Agent</text>
+  <line x1="70" y1="178" x2="230" y2="178" stroke="#ddd" stroke-width="1"/>
+  <text x="70" y="200" font-size="12" fill="#555">- 요구사항 분석</text>
+  <text x="70" y="220" font-size="12" fill="#555">- 도메인 모델링</text>
+  <text x="70" y="240" font-size="12" fill="#555">- 사용자 스토리</text>
+  <text x="70" y="260" font-size="12" fill="#555">- Bolt 계획 수립</text>
+  <text x="70" y="285" font-size="11" fill="#999">Mob Elaboration</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="250" y1="200" x2="260" y2="200" stroke="#333" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Phase 2: Construction -->
+  <rect x="270" y="100" width="200" height="200" rx="8" fill="white" stroke="#333" stroke-width="2"/>
+  <rect x="270" y="100" width="200" height="40" rx="8" fill="#e8e8e8" stroke="#333" stroke-width="2"/>
+  <text x="370" y="126" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">Construction</text>
+
+  <text x="290" y="168" font-size="13" fill="#555">Construction Agent</text>
+  <line x1="290" y1="178" x2="450" y2="178" stroke="#ddd" stroke-width="1"/>
+  <text x="290" y="200" font-size="12" fill="#555">- 코드 구현</text>
+  <text x="290" y="220" font-size="12" fill="#555">- 테스트 작성</text>
+  <text x="290" y="240" font-size="12" fill="#555">- 코드 리뷰</text>
+  <text x="290" y="260" font-size="12" fill="#555">- 검증 (10~26 CP)</text>
+  <text x="290" y="285" font-size="11" fill="#999">Mob Construction</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="470" y1="200" x2="480" y2="200" stroke="#333" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Phase 3: Operations -->
+  <rect x="490" y="100" width="200" height="200" rx="8" fill="white" stroke="#333" stroke-width="2"/>
+  <rect x="490" y="100" width="200" height="40" rx="8" fill="#e8e8e8" stroke="#333" stroke-width="2"/>
+  <text x="590" y="126" text-anchor="middle" font-size="15" font-weight="bold" fill="#333">Operations</text>
+
+  <text x="510" y="168" font-size="13" fill="#555">Operations Agent</text>
+  <line x1="510" y1="178" x2="670" y2="178" stroke="#ddd" stroke-width="1"/>
+  <text x="510" y="200" font-size="12" fill="#555">- 배포 자동화</text>
+  <text x="510" y="220" font-size="12" fill="#555">- 모니터링</text>
+  <text x="510" y="240" font-size="12" fill="#555">- 지속적 개선</text>
+  <text x="510" y="260" font-size="12" fill="#555">- 피드백 루프</text>
+  <text x="510" y="285" font-size="11" fill="#999">Continuous</text>
+
+  <!-- Human checkpoints label -->
+  <rect x="180" y="315" width="360" height="28" rx="4" fill="white" stroke="#666" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="360" y="334" text-anchor="middle" font-size="12" fill="#666">각 단계마다 사람의 검증 필수 (Human Checkpoint)</text>
+</svg>
