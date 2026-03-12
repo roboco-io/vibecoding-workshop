@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "내러티브 — 바이브 코딩의 현 주소"
 ---
 

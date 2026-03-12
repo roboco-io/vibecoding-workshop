@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "바이브 코딩 워크숍"
 ---
 
