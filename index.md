@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Home
-nav_order: 1
 ---
 
 # 다이렉트 클라우드클럽 바이브 코딩 워크숍

@@ -1,7 +1,6 @@
 ---
 layout: default
-title: "학생 가이드"
-nav_order: 3
+title: "바이브 코딩 워크숍 — 학생 가이드"
 ---
 
 # 바이브 코딩 워크숍 — 학생 가이드
