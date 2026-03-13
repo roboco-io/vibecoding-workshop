@@ -1,9 +1,21 @@
 title: "다이렉트 클라우드클럽 바이브 코딩 워크숍"
-description: "바이브 코딩 워크숍 자료"
+tagline: "바이브 코딩 워크숍 자료"
+description: "다이렉트 클라우드클럽 시니어 개발자 대상 바이브 코딩 워크숍"
 baseurl: ""
 url: "https://crispy-carnival-qj1ryn7.pages.github.io"
 
-theme: jekyll-theme-hacker
+remote_theme: cotes2020/jekyll-theme-chirpy
+
+lang: ko
+timezone: Asia/Seoul
+
+plugins:
+  - jekyll-remote-theme
+
+toc: true
+
+social:
+  name: "다이렉트 클라우드클럽"
 
 exclude:
   - Gemfile

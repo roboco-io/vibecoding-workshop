@@ -29,9 +29,6 @@ jobs:
       - name: Build MARP slides
         run: npx --yes @marp-team/marp-cli common/presentation.md -o common/presentation.html --allow-local-files
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -46,7 +43,8 @@ jobs:
       - name: Copy MARP output to _site
         run: |
           cp common/presentation.html _site/presentation.html
-          cp -r common/images _site/common/images
+          mkdir -p _site/common/images
+          cp -r common/images/* _site/common/images/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
