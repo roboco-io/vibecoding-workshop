@@ -38,8 +38,8 @@ AI를 개발 파이프라인에 안전하게 통합하는 전체 프로세스를
 
 ### 필수 설치
 
--**Claude Code CLI** 설치
--**[oh-my-claudecode (OMC)](https://github.com/Yeachan-Heo/oh-my-claudecode)** 설치
+- **Claude Code CLI** 설치
+- **[oh-my-claudecode (OMC)](https://github.com/Yeachan-Heo/oh-my-claudecode)** 설치
 
   OMC는 Claude Code 위에서 동작하는 **멀티 에이전트 오케스트레이션 레이어**다. 32개의 전문 에이전트(아키텍처, 테스트, 코드 리뷰, 보안 등)를 자동으로 조합하여 복잡한 작업을 처리한다. 워크숍에서는 주로 다음 명령어를 사용한다:
 
@@ -56,7 +56,7 @@ AI를 개발 파이프라인에 안전하게 통합하는 전체 프로세스를
   /omc-setup
   ```
 
--**[OpenSpec](https://github.com/Fission-AI/OpenSpec)** 설치
+- **[OpenSpec](https://github.com/Fission-AI/OpenSpec)** 설치
 
   ```bash
   npm install -g @fission-ai/openspec@latest
@@ -73,15 +73,15 @@ AI를 개발 파이프라인에 안전하게 통합하는 전체 프로세스를
 
   스펙 문서가 코드와 함께 살아있는 문서(living documentation)로 유지되므로, "코드가 무엇을 해야 하는지"를 항상 알 수 있다.
 
--**GitHub CLI (gh)** 설치 및 로그인
--**Git** + GitHub 계정 준비
--주력 개발 환경 (IDE, 런타임)
+- **GitHub CLI (gh)** 설치 및 로그인
+- **Git** + GitHub 계정 준비
+- 주력 개발 환경 (IDE, 런타임)
 
 ### 프로젝트 준비
 
--아래 추천 목록에서 자기 스택에 맞는 RealWorld 구현체 **Fork**
--Fork한 프로젝트 클론 및 **로컬 빌드 확인**
--Fork한 리포지토리의 **GitHub Issues 기능 활성화** (Settings → Features → Issues 체크)
+- 아래 추천 목록에서 자기 스택에 맞는 RealWorld 구현체 **Fork**
+- Fork한 프로젝트 클론 및 **로컬 빌드 확인**
+- Fork한 리포지토리의 **GitHub Issues 기능 활성화** (Settings → Features → Issues 체크)
 
 [RealWorld](https://github.com/gothinkster/realworld)에서 자기 스택에 맞는 구현체를 선택하세요.
 
@@ -91,7 +91,7 @@ AI를 개발 파이프라인에 안전하게 통합하는 전체 프로세스를
 
 ### Claude Code YOLO 모드 시작
 
--YOLO 모드로 Claude Code 실행
+- YOLO 모드로 Claude Code 실행
 
 ```bash
 claude --dangerously-skip-permissions
@@ -101,7 +101,7 @@ claude --dangerously-skip-permissions
 
 ### GitHub CLI 로그인 확인
 
--GitHub CLI 로그인 상태 확인
+- GitHub CLI 로그인 상태 확인
 
 ```bash
 gh auth status
@@ -119,22 +119,22 @@ gh auth status
 
 **구현체 선택 → Fork → 클론 → 빌드 확인:**
 
--GitHub에서 선택한 구현체를 Fork
--Fork한 리포지토리 클론
+- GitHub에서 선택한 구현체를 Fork
+- Fork한 리포지토리 클론
 
 ```bash
 git clone https://github.com/<your-username>/<repo-name>.git
 cd <repo-name>
 ```
 
--클로드 코드에게 로컬 빌드 요청
+- 클로드 코드에게 로컬 빌드 요청
 
 **Fork 후 설정:**
 
--Fork한 리포지토리의 **GitHub Issues 기능 활성화** (Settings → Features → Issues 체크)
--로컬 빌드가 정상 동작하는지 확인
+- Fork한 리포지토리의 **GitHub Issues 기능 활성화** (Settings → Features → Issues 체크)
+- 로컬 빌드가 정상 동작하는지 확인
 
--프로젝트 폴더에서 OpenSpec 초기화
+- 프로젝트 폴더에서 OpenSpec 초기화
 
 ```bash
 openspec init
@@ -163,7 +163,7 @@ openspec/
 
 ### Step 1-2: CLAUDE.md 생성 (10분)
 
--Claude Code에서 `/init` 명령어를 실행
+- Claude Code에서 `/init` 명령어를 실행
 
 ```text
 /init
@@ -173,15 +173,15 @@ openspec/
 
 **생성 후 확인할 것:**
 
--빌드/테스트 명령어가 정확한지
--프로젝트 구조 설명이 맞는지
--누락된 컨텍스트가 있는지 → 직접 보완
+- 빌드/테스트 명령어가 정확한지
+- 프로젝트 구조 설명이 맞는지
+- 누락된 컨텍스트가 있는지 → 직접 보완
 
 ### Step 1-3: 작업 계획 수립 & GitHub 이슈 등록 (15분)
 
 CLAUDE.md로 프로젝트 컨텍스트가 구축되었으므로, 앞으로 진행할 작업의 전체 계획을 깃헙 이슈로 등록한다.
 
--작업 계획 수립 프롬프트 실행
+- 작업 계획 수립 프롬프트 실행
 
 > **프롬프트:**
 >
@@ -193,7 +193,7 @@ CLAUDE.md로 프로젝트 컨텍스트가 구축되었으므로, 앞으로 진�
 > 4. 전환 계획서 — generate-plan 스킬로 migration-plan.md 생성
 >
 
--작성된 계획 리뷰 후 GitHub 이슈 등록
+- 작성된 계획 리뷰 후 GitHub 이슈 등록
 
 > **프롬프트:**
 >
@@ -205,7 +205,7 @@ AI가 작업 계획을 제안하면 검토한 뒤, GitHub CLI로 이슈를 등�
 
 ### Step 1-4: OpenSpec 문서화 (40분)
 
--OpenSpec 문서화 프롬프트 실행
+- OpenSpec 문서화 프롬프트 실행
 
 > **프롬프트:**
 >
@@ -228,7 +228,7 @@ openspec/changes/<change-name>/
 
 ### Step 1-5: 문서 → 스킬 전환 (25분)
 
--스킬 생성 프롬프트 실행
+- 스킬 생성 프롬프트 실행
 
 > **프롬프트:**
 >
@@ -252,7 +252,7 @@ AI와 협업하여 테스트를 작성하고, 린트를 설정하고, Makefile�
 
 ### Step 2-1: 단위 테스트 생성 (25분)
 
--단위 테스트 생성 프롬프트 실행
+- 단위 테스트 생성 프롬프트 실행
 
 > **프롬프트:**
 >
@@ -270,7 +270,7 @@ AI가 테스트 작성 → 사람이 검토 → 승인 후 실행 → 결과 확
 
 ### Step 2-2: E2E 테스트 생성 (20분)
 
--E2E 테스트 생성 프롬프트 실행
+- E2E 테스트 생성 프롬프트 실행
 
 > **프롬프트:**
 >
@@ -280,7 +280,7 @@ AI가 테스트 작성 → 사람이 검토 → 승인 후 실행 → 결과 확
 
 ### Step 2-3: 린트 설정 (10분)
 
--린트 설정 프롬프트 실행
+- 린트 설정 프롬프트 실행
 
 > **프롬프트:**
 >
@@ -289,7 +289,7 @@ AI가 테스트 작성 → 사람이 검토 → 승인 후 실행 → 결과 확
 
 ### Step 2-4: Makefile 통합 (15분)
 
--Makefile 통합 프롬프트 실행
+- Makefile 통합 프롬프트 실행
 
 > **프롬프트:**
 >
@@ -304,7 +304,7 @@ Git Hooks로 로컬 품질 게이트를 구축한다.
 
 ### Step 3-1: pre-commit hook (20분)
 
--pre-commit hook 설정 프롬프트 실행
+- pre-commit hook 설정 프롬프트 실행
 
 > **프롬프트:**
 >
@@ -318,7 +318,7 @@ Git Hooks로 로컬 품질 게이트를 구축한다.
 
 ### Step 3-2: pre-push hook (20분)
 
--pre-push hook 설정 프롬프트 실행
+- pre-push hook 설정 프롬프트 실행
 
 > **프롬프트:**
 >
@@ -333,13 +333,13 @@ Git Hooks로 로컬 품질 게이트를 구축한다.
 
 Git Hooks가 정상 동작하는지 테스트 커밋과 푸시로 확인한다.
 
--pre-commit hook 동작 확인
+- pre-commit hook 동작 확인
 
 ```bash
 git add -A && git commit -m "test: verify pre-commit hook"
 ```
 
--pre-push hook 동작 확인
+- pre-push hook 동작 확인
 
 ```bash
 git push
@@ -357,7 +357,7 @@ Claude Code는 프로젝트별 세션 로그를 `~/.claude/projects/<프로젝�
 
 이 로그를 기반으로 오늘 워크숍 과정을 재현 가능한 튜토리얼로 변환한다.
 
--튜토리얼 작성 프롬프트 실행
+- 튜토리얼 작성 프롬프트 실행
 
 > **프롬프트:**
 >
@@ -371,7 +371,7 @@ Claude Code는 프로젝트별 세션 로그를 `~/.claude/projects/<프로젝�
 
 ### Step 4-2: 전환 계획서 생성 (10분)
 
--generate-plan 스킬 설치
+- generate-plan 스킬 설치
 
 ```bash
 mkdir -p .claude/skills/generate-plan
@@ -379,7 +379,7 @@ mkdir -p .claude/skills/generate-plan
 # SKILL.md, output-template.md, project-guidelines.md
 ```
 
--전환 계획서 생성 프롬프트 실행
+- 전환 계획서 생성 프롬프트 실행
 
 > **프롬프트:**
 >
