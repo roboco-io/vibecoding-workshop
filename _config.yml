@@ -4,6 +4,7 @@ baseurl: ""
 url: "https://crispy-carnival-qj1ryn7.pages.github.io"
 
 theme: jekyll-theme-cayman
+repository: directcloudlab/viebcoding-workshop
 
 exclude:
   - Gemfile
