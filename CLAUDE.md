@@ -44,13 +44,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Part 1**: 바이브 코딩의 현 주소 — 정의, Anthropic 사례, OpenClaw 케이스 스터디, 도입 방법
 - **Part 2**: 모던 소프트웨어 엔지니어링 — David Farley 원칙, Claude Code 심화, OMC 소개
 
-### 빌드
+### 빌드 (common/ 디렉토리에서 실행)
 
 ```bash
-make all          # SVG 검증 + PDF/PPTX/HTML 빌드
-make validate-svg # SVG XML 유효성 검증만 실행
+cd common
+make all          # SVG 검증 + PDF/PPTX/HTML 빌드 (npx @marp-team/marp-cli 사용)
+make validate-svg # SVG XML 유효성 검증만 실행 (xmllint 필요)
 make clean        # 빌드 산출물 삭제
 ```
+
+## GitHub Pages 배포
+
+- **자동 배포**: `main` 브랜치 push 시 GitHub Actions가 Jekyll + MARP 빌드 후 GitHub Pages에 배포
+- **Jekyll 테마**: `jekyll-theme-cayman` — `_config.yml`의 `exclude` 목록으로 내부 문서 노출 제어
+- **발행 대상 페이지**: `index.md` (홈), `common/narrative.md`, `vibecoding-for-developer/student-guide.md`, `common/presentation.html` (MARP 슬라이드)
+- **로컬 미리보기**: `bundle install && bundle exec jekyll serve`
 
 ## 개발자 워크숍 (vibecoding-for-developer/)
 
