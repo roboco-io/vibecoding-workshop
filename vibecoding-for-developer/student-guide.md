@@ -22,14 +22,13 @@ AI를 개발 파이프라인에 안전하게 통합하는 전체 프로세스를
 
 ## 워크숍 타임라인
 
-```text
-14:00  오프닝 & 환경 확인 (20분)
-14:20  1단계: 문서화 (80분)
-15:40  2단계: 테스트 구현 (70분)
-16:50  3단계: CI/CD 구축 (50분)
-17:40  마무리: 튜토리얼 작성 & 전환 계획서 생성 (20분)
-18:00  종료
-```
+1. State of Vibe Coding - 바이브코딩의 현주소
+1. 환경 확인
+1. 1단계: 문서화
+1. 2단계: 테스트 구현
+1. 3단계: CI/CD 구축
+1. 마무리: 튜토리얼 작성 & 전환 계획서 생성
+1. 종료
 
 > 휴식은 자유 — 각 단계 사이에 자율로 쉬어가세요
 
@@ -39,8 +38,8 @@ AI를 개발 파이프라인에 안전하게 통합하는 전체 프로세스를
 
 ### 필수 설치
 
-- [ ] **Claude Code CLI** 설치
-- [ ] **[oh-my-claudecode (OMC)](https://github.com/Yeachan-Heo/oh-my-claudecode)** 설치
+- **Claude Code CLI** 설치
+- **[oh-my-claudecode (OMC)](https://github.com/Yeachan-Heo/oh-my-claudecode)** 설치
 
   OMC는 Claude Code 위에서 동작하는 **멀티 에이전트 오케스트레이션 레이어**다. 32개의 전문 에이전트(아키텍처, 테스트, 코드 리뷰, 보안 등)를 자동으로 조합하여 복잡한 작업을 처리한다. 워크숍에서는 주로 다음 명령어를 사용한다:
 
@@ -57,7 +56,7 @@ AI를 개발 파이프라인에 안전하게 통합하는 전체 프로세스를
   /omc-setup
   ```
 
-- [ ] **[OpenSpec](https://github.com/Fission-AI/OpenSpec)** 설치
+- **[OpenSpec](https://github.com/Fission-AI/OpenSpec)** 설치
 
   ```bash
   npm install -g @fission-ai/openspec@latest
