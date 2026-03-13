@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: default
 title: "내러티브 — 바이브 코딩의 현 주소"
+nav_order: 2
 ---
 
 # State of Vibe Coding — 바이브 코딩의 현 주소

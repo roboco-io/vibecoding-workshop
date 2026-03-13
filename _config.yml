@@ -3,21 +3,18 @@ description: "바이브 코딩 워크숍 자료"
 baseurl: ""
 url: "https://crispy-carnival-qj1ryn7.pages.github.io"
 
-remote_theme: Simpleyyt/jekyll-theme-next
+remote_theme: just-the-docs/just-the-docs
 
 plugins:
   - jekyll-remote-theme
 
-# NexT theme settings
-scheme: Mist
-language: ko
+color_scheme: light
 
-menu:
-  home: /
-  프레젠테이션: /presentation.html
+aux_links:
+  "GitHub":
+    - "https://github.com/directcloudlab/viebcoding-workshop"
 
-sidebar:
-  display: always
+nav_enabled: true
 
 exclude:
   - Gemfile
