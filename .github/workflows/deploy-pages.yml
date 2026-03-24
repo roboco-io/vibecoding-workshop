@@ -27,7 +27,9 @@ jobs:
           node-version: "24"
 
       - name: Build MARP slides
-        run: npx --yes @marp-team/marp-cli common/presentation.md -o common/presentation.html --allow-local-files
+        run: |
+          npx --yes @marp-team/marp-cli common/presentation.md -o common/presentation.html --allow-local-files
+          npx @marp-team/marp-cli vibecoding-for-nondeveloper/presentation.md -o vibecoding-for-nondeveloper/presentation.html --allow-local-files
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -45,6 +47,8 @@ jobs:
           cp common/presentation.html _site/presentation.html
           mkdir -p _site/common/images
           cp -r common/images/* _site/common/images/
+          mkdir -p _site/vibecoding-for-nondeveloper
+          cp vibecoding-for-nondeveloper/presentation.html _site/vibecoding-for-nondeveloper/presentation.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

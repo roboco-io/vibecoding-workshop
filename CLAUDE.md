@@ -18,19 +18,24 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 .
 ├── common/                            ← 공통 강의 자료 (MARP 프레젠테이션)
 │   ├── presentation.md                ← MARP 슬라이드 소스
-│   ├── narrative.md                   ← 스토리라인 산문 문서
+│   ├── narrative.md                   ← 스토리라인 산문 문서 (GitHub Pages 발행)
 │   ├── ideation.md                    ← 발표 기획 및 키 아이디어
 │   ├── images/                        ← SVG 다이어그램 + PNG 이미지
 │   ├── ModernSoftwareEngineering/     ← 참고 자료 (David Farley 원칙)
 │   └── Makefile                       ← 빌드 스크립트
 ├── vibecoding-for-developer/          ← 개발자 워크숍 (15명, 시니어)
 │   ├── PRD.md                         ← 제품 요구 사항 문서
-│   ├── student-guide.md               ← 학생용 워크숍 가이드
+│   ├── student-guide.md               ← 학생용 워크숍 가이드 (GitHub Pages 발행)
 │   ├── workshop-flow.md               ← 워크숍 흐름 (슬라이드·가이드 작성 기준)
 │   ├── interview-summary.md           ← 기획자 심층 인터뷰 4라운드 결과
 │   └── developer_survey_analysis.md   ← 개발자 설문 분석 (15명)
-├── vibecoding-for-nondeveloper/       ← 비개발자 워크숍 (12명, 기획 중)
+├── vibecoding-for-nondeveloper/       ← 비개발자 워크숍 (12명)
+│   ├── student-guide.md               ← 학생용 워크숍 가이드
+│   ├── ideation.md                    ← 워크숍 기획 및 흐름 설계
 │   └── nondeveloper_servey_analysis.md ← 비개발자 설문 분석 (12명)
+├── openspec/                          ← OpenSpec 변경 관리 (스펙 기반 워크플로우)
+│   ├── project.md                     ← OpenSpec 프로젝트 컨텍스트
+│   └── specs/                         ← 기능별 스펙 문서
 └── reference/                         ← 참조 자료 (읽기 전용)
     ├── presentation.md                ← 워크숍 프레젠테이션 원본
     ├── vibe-coding-tutorial.md        ← Go RealWorld 바이브코딩 튜토리얼
@@ -89,10 +94,24 @@ make clean        # 빌드 산출물 삭제
 ## 비개발자 워크숍 (vibecoding-for-nondeveloper/)
 
 - **대상**: 비개발자 12명 (영업·CS·운영 42%, 기획/PM 17%, 디자인 8%)
-- **상태**: 기획 중 — 설문 분석은 `nondeveloper_servey_analysis.md` 참조
+- **4단계 구조**: 문제 정의(채팅 브레인스토밍) → PRD 작성(심층 인터뷰) → 목업 제작(아티팩트+코드) → 개발 계획(GitHub 이슈 등록)
+- **도구**: 클로드 앱(채팅·코드·코워크·아티팩트 모드) + 코드 CLI + GitHub CLI
+- **핵심 차이**: 코딩 없이 자연어만으로 진행, 클로드 코워크로 환경설정 대행
+- 설문 분석은 `nondeveloper_servey_analysis.md`, 워크숍 기획은 `ideation.md` 참조
+
+## OpenSpec 워크플로우
+
+이 프로젝트는 OpenSpec을 사용하여 변경 관리를 수행한다. `openspec/` 디렉토리에 프로젝트 컨텍스트와 기능별 스펙이 관리되며, `.github/skills/` 및 `common/.claude/skills/`에 OpenSpec 관련 스킬이 정의되어 있다.
+
+- 새로운 변경 제안: `openspec-propose` 스킬 사용
+- 변경 구현: `openspec-apply-change` 스킬 사용
+- 아이디어 탐색: `openspec-explore` 스킬 사용
 
 ## Editing Guidelines
 
 - `reference/` 하위 파일은 외부 프로젝트에서 복사한 원본 — 직접 수정하지 말 것
-- `PRD.md`가 워크숍 설계의 기준 — `student-guide.md`나 `workshop-flow.md` 수정 시 PRD와의 정합성 확인
+- `PRD.md`가 개발자 워크숍 설계의 기준 — `student-guide.md`나 `workshop-flow.md` 수정 시 PRD와의 정합성 확인
+- 비개발자 워크숍의 `ideation.md`가 해당 트랙의 설계 기준 — `student-guide.md` 수정 시 정합성 확인
 - 각 워크숍 디렉토리는 독립적으로 관리 — 공유 자료는 `reference/`에 위치
+- GitHub Pages 발행 대상 문서 수정 시 `_config.yml`의 `exclude` 목록과 충돌하지 않는지 확인
+- `openspec/project.md`는 CLAUDE.md와 동기화 유지 — 프로젝트 구조 변경 시 양쪽 모두 업데이트

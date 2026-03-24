@@ -24,6 +24,8 @@ exclude:
   - vibecoding-for-developer/workshop-flow.md
   - vibecoding-for-developer/interview-summary.md
   - vibecoding-for-developer/developer_survey_analysis.md
-  - vibecoding-for-nondeveloper/
+  - vibecoding-for-nondeveloper/ideation.md
+  - vibecoding-for-nondeveloper/presentation.md
+  - vibecoding-for-nondeveloper/nondeveloper_servey_analysis.md
   - "*.pdf"
   - "*.pptx"

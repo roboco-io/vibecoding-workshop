@@ -1,4 +1,200 @@
 <style>
+/* ── Navigation Bar ── */
+.site-nav {
+  background: #1e2a38;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.site-nav li a {
+  color: #c8d6e5;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+  display: inline-block;
+}
+.site-nav li a:hover,
+.site-nav li a.active {
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+}
+.site-nav li a.active {
+  font-weight: 600;
+}
+
+/* ── Table of Contents ── */
+.toc-container {
+  background: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 24px 0 32px;
+}
+.toc-container summary {
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  color: #24292f;
+  user-select: none;
+}
+.toc-container[open] summary {
+  margin-bottom: 10px;
+}
+.toc-container ul {
+  margin: 0;
+  padding-left: 20px;
+}
+.toc-container li {
+  margin: 4px 0;
+  line-height: 1.6;
+}
+.toc-container li a {
+  color: #0969da;
+  text-decoration: none;
+  font-size: 14px;
+}
+.toc-container li a:hover {
+  text-decoration: underline;
+}
+
+/* ── Workshop Cards (Home Page) ── */
+.workshop-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 24px 0;
+}
+.workshop-card {
+  border: 1px solid #d0d7de;
+  border-radius: 10px;
+  padding: 24px;
+  transition: box-shadow 0.2s, transform 0.15s;
+  background: #fff;
+}
+.workshop-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+.workshop-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+.workshop-card p {
+  color: #57606a;
+  font-size: 14px;
+  margin: 0 0 16px;
+  line-height: 1.5;
+}
+.workshop-card .card-badge {
+  display: inline-block;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  margin-right: 6px;
+  margin-bottom: 10px;
+}
+.badge-dev {
+  background: #ddf4ff;
+  color: #0969da;
+}
+.badge-nondev {
+  background: #fff8c5;
+  color: #9a6700;
+}
+.badge-common {
+  background: #e6ffec;
+  color: #1a7f37;
+}
+.workshop-card .card-link {
+  display: inline-block;
+  padding: 8px 18px;
+  background: #0969da;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.workshop-card .card-link:hover {
+  background: #0550ae;
+}
+.workshop-card .card-link.secondary {
+  background: #f6f8fa;
+  color: #24292f;
+  border: 1px solid #d0d7de;
+}
+.workshop-card .card-link.secondary:hover {
+  background: #eaeef2;
+}
+.card-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* ── Step Styling ── */
+h3[id^="step-"] {
+  border-left: 3px solid #0969da;
+  padding-left: 12px;
+}
+
+/* ── Back to Top Button ── */
+.back-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #0969da;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.back-to-top.visible {
+  opacity: 1;
+}
+.back-to-top:hover {
+  transform: scale(1.1);
+}
+
+/* ── Progress Bar (for long guides) ── */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #0969da, #1f6feb);
+  z-index: 101;
+  transition: width 0.1s;
+}
+
+/* ── Code Block Copy Button ── */
 pre {
   position: relative;
 }
@@ -28,9 +224,89 @@ pre:hover .copy-btn {
   color: #fff;
   border-color: #2ea44f;
 }
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .site-nav ul {
+    gap: 2px;
+  }
+  .site-nav li a {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+  .workshop-cards {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
+
 <script defer>
 document.addEventListener('DOMContentLoaded', function () {
+
+  /* ── Navigation Bar ── */
+  var nav = document.createElement('nav');
+  nav.className = 'site-nav';
+  nav.innerHTML = '<ul>' +
+    '<li><a href="/">Home</a></li>' +
+    '<li><a href="/presentation.html">Slides</a></li>' +
+    '<li><a href="/common/narrative">Narrative</a></li>' +
+    '<li><a href="/vibecoding-for-developer/student-guide">Developer</a></li>' +
+    '<li><a href="/vibecoding-for-nondeveloper/student-guide">Non-Developer</a></li>' +
+    '<li><a href="/vibecoding-for-nondeveloper/presentation.html">Non-Dev Slides</a></li>' +
+    '</ul>';
+  document.body.insertBefore(nav, document.body.firstChild);
+
+  // Highlight active nav link
+  var path = window.location.pathname.replace(/\/$/, '') || '/';
+  nav.querySelectorAll('a').forEach(function (a) {
+    var href = a.getAttribute('href').replace(/\/$/, '') || '/';
+    if (path === href || (href !== '/' && path.indexOf(href) === 0)) {
+      a.classList.add('active');
+    }
+  });
+
+  /* ── Auto Table of Contents ── */
+  var headings = document.querySelectorAll('.main-content h2');
+  if (headings.length > 3) {
+    var toc = document.createElement('details');
+    toc.className = 'toc-container';
+    toc.setAttribute('open', '');
+    var summary = document.createElement('summary');
+    summary.textContent = 'Table of Contents';
+    toc.appendChild(summary);
+    var ul = document.createElement('ul');
+
+    headings.forEach(function (h) {
+      if (!h.id) {
+        h.id = h.textContent.trim().toLowerCase()
+          .replace(/[^a-z0-9가-힣\s-]/g, '')
+          .replace(/\s+/g, '-');
+      }
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      a.href = '#' + h.id;
+      a.textContent = h.textContent;
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+
+    toc.appendChild(ul);
+    var mainContent = document.querySelector('.main-content');
+    var firstH1 = mainContent && mainContent.querySelector('h1');
+    if (firstH1 && firstH1.nextSibling) {
+      // Insert after first blockquote or paragraph after h1
+      var insertAfter = firstH1.nextElementSibling;
+      while (insertAfter && (insertAfter.tagName === 'BLOCKQUOTE' || insertAfter.tagName === 'P' || insertAfter.tagName === 'HR')) {
+        if (insertAfter.tagName === 'HR' || !insertAfter.nextElementSibling) break;
+        insertAfter = insertAfter.nextElementSibling;
+      }
+      insertAfter.parentNode.insertBefore(toc, insertAfter.nextSibling);
+    } else if (mainContent) {
+      mainContent.insertBefore(toc, mainContent.firstChild);
+    }
+  }
+
+  /* ── Code Block Copy Buttons ── */
   document.querySelectorAll('pre').forEach(function (pre) {
     var btn = document.createElement('button');
     btn.className = 'copy-btn';
@@ -48,6 +324,38 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
     pre.appendChild(btn);
+  });
+
+  /* ── Back to Top Button ── */
+  var topBtn = document.createElement('button');
+  topBtn.className = 'back-to-top';
+  topBtn.innerHTML = '&#8593;';
+  topBtn.title = 'Back to top';
+  topBtn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  document.body.appendChild(topBtn);
+
+  /* ── Progress Bar ── */
+  var progressBar = document.createElement('div');
+  progressBar.className = 'progress-bar';
+  document.body.appendChild(progressBar);
+
+  /* ── Scroll Handler (throttled) ── */
+  var ticking = false;
+  window.addEventListener('scroll', function () {
+    if (!ticking) {
+      window.requestAnimationFrame(function () {
+        var scrollTop = window.scrollY;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+
+        progressBar.style.width = scrollPercent + '%';
+        topBtn.classList.toggle('visible', scrollTop > 400);
+        ticking = false;
+      });
+      ticking = true;
+    }
   });
 });
 </script>
