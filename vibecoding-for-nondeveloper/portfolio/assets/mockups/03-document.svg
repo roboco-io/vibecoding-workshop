@@ -1,0 +1,114 @@
+<svg viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-label="문서·보고서 초안 생성기 UI 콘셉트">
+  <title>문서·보고서 초안 생성기</title>
+  <desc>좌측 인터뷰 답변, 중앙 초안, 우측 자가 비판 결과</desc>
+  <defs>
+    <style>
+      .bg          { fill: #FFFFFF; }
+      .bg-elev     { fill: #FAFAFA; }
+      .border      { stroke: #E5E7EB; stroke-width: 1; fill: none; }
+      .text-primary   { fill: #0A0A0A; font-family: Pretendard, system-ui, sans-serif; }
+      .text-secondary { fill: #525252; font-family: Pretendard, system-ui, sans-serif; }
+      .text-tertiary  { fill: #A3A3A3; font-family: Pretendard, system-ui, sans-serif; }
+      .accent      { fill: #5B5BD6; }
+      .accent-soft { fill: #EEF0FF; }
+      .check       { fill: #059669; }
+      .warn        { fill: #D97706; }
+      .warn-soft   { fill: rgba(217, 119, 6, 0.1); }
+      .tab-active  { fill: #EEF0FF; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="1000" rx="12"/>
+  <rect class="border" x="0.5" y="0.5" width="1599" height="999" rx="12"/>
+
+  <!-- Header -->
+  <rect class="bg-elev" x="0" y="0" width="1600" height="64"/>
+  <line x1="0" y1="64" x2="1600" y2="64" stroke="#E5E7EB"/>
+  <circle class="accent" cx="32" cy="32" r="6"/>
+  <text class="text-primary" x="48" y="36" font-size="16" font-weight="600">Draft Generator</text>
+  <text class="text-secondary" x="220" y="36" font-size="13">|</text>
+  <text class="text-secondary" x="240" y="36" font-size="13">PRD · 제안서 · 주간보고 · 기획서 · 회의록</text>
+
+  <!-- Three columns: 400 / 800 / 400 -->
+  <line x1="400"  y1="64" x2="400"  y2="1000" stroke="#E5E7EB"/>
+  <line x1="1200" y1="64" x2="1200" y2="1000" stroke="#E5E7EB"/>
+
+  <!-- LEFT: Interview answers -->
+  <text class="text-primary" x="32" y="108" font-size="14" font-weight="600">인터뷰 답변</text>
+  <text class="text-secondary" x="160" y="108" font-size="13">(8/8)</text>
+  <line x1="32" y1="124" x2="368" y2="124" stroke="#E5E7EB"/>
+  <g font-family="Pretendard, system-ui, sans-serif" font-size="14">
+    <text class="check" x="32" y="160">✓</text><text class="text-primary" x="56" y="160">핵심 사용자</text>
+    <text class="check" x="32" y="192">✓</text><text class="text-primary" x="56" y="192">풀어낼 문제</text>
+    <text class="check" x="32" y="224">✓</text><text class="text-primary" x="56" y="224">성공 기준</text>
+    <text class="check" x="32" y="256">✓</text><text class="text-primary" x="56" y="256">비목표</text>
+    <text class="check" x="32" y="288">✓</text><text class="text-primary" x="56" y="288">핵심 기능</text>
+    <text class="check" x="32" y="320">✓</text><text class="text-primary" x="56" y="320">제약</text>
+    <text class="check" x="32" y="352">✓</text><text class="text-primary" x="56" y="352">일정·인원</text>
+    <text class="check" x="32" y="384">✓</text><text class="text-primary" x="56" y="384">위험 요소</text>
+  </g>
+  <rect class="bg-elev" x="32" y="420" width="120" height="36" rx="8"/>
+  <rect class="border" x="32.5" y="420.5" width="119" height="35" rx="8"/>
+  <text class="text-primary" x="92" y="442" font-size="13" text-anchor="middle">재인터뷰</text>
+
+  <!-- CENTER: Draft -->
+  <text class="text-primary" x="432" y="108" font-size="16" font-weight="600">PRD: 사내 결재 모바일 화면</text>
+  <line x1="432" y1="128" x2="1168" y2="128" stroke="#E5E7EB"/>
+
+  <g font-family="Pretendard, system-ui, sans-serif">
+    <text class="text-primary" x="432" y="168" font-size="15" font-weight="600">1. 배경</text>
+    <text class="text-secondary" x="432" y="196" font-size="14">결재 라인이 평균 6단계로 길어 평균 처리</text>
+    <text class="text-secondary" x="432" y="218" font-size="14">시간이 3.4일에 달함.</text>
+
+    <text class="text-primary" x="432" y="262" font-size="15" font-weight="600">2. 목표</text>
+    <text class="text-secondary" x="432" y="290" font-size="14">결재 단계 6 → 3으로 단축, 모바일</text>
+    <text class="text-secondary" x="432" y="312" font-size="14">전용 결재 화면 출시.</text>
+
+    <text class="text-primary" x="432" y="356" font-size="15" font-weight="600">3. 핵심 기능</text>
+    <text class="warn" x="540" y="356" font-size="14">⚠</text>
+    <text class="text-secondary" x="456" y="384" font-size="14">3.1 푸시 알림</text>
+    <text class="text-secondary" x="456" y="406" font-size="14">3.2 위임 결재</text>
+    <text class="text-secondary" x="456" y="428" font-size="14">3.3 결재 라인 단축 정책</text>
+    <text class="text-tertiary" x="456" y="450" font-size="14">…</text>
+  </g>
+
+  <!-- Download buttons -->
+  <g transform="translate(432, 540)">
+    <rect class="bg-elev" x="0" y="0" width="160" height="36" rx="8"/>
+    <rect class="border" x="0.5" y="0.5" width="159" height="35" rx="8"/>
+    <text class="text-primary" x="80" y="22" font-size="13" text-anchor="middle">Markdown 다운</text>
+    <rect class="bg-elev" x="172" y="0" width="100" height="36" rx="8"/>
+    <rect class="border" x="172.5" y="0.5" width="99" height="35" rx="8"/>
+    <text class="text-primary" x="222" y="22" font-size="13" text-anchor="middle">.docx</text>
+  </g>
+
+  <!-- RIGHT: Self-critique -->
+  <text class="text-primary" x="1232" y="108" font-size="14" font-weight="600">자가 비판</text>
+  <text class="warn" x="1320" y="108" font-size="13">(4건)</text>
+  <line x1="1232" y1="124" x2="1568" y2="124" stroke="#E5E7EB"/>
+
+  <g font-family="Pretendard, system-ui, sans-serif">
+    <rect class="warn-soft" x="1232" y="148" width="336" height="76" rx="8"/>
+    <text class="warn" x="1248" y="172" font-size="13" font-weight="500">⚠ 논리 결함</text>
+    <text class="text-secondary" x="1248" y="196" font-size="13">"근거 없이 효율이 50% 증가한다고…"</text>
+
+    <rect class="warn-soft" x="1232" y="240" width="336" height="76" rx="8"/>
+    <text class="warn" x="1248" y="264" font-size="13" font-weight="500">⚠ 누락 섹션</text>
+    <text class="text-secondary" x="1248" y="288" font-size="13">"보안 고려사항"이 명시되지 않음</text>
+
+    <rect class="warn-soft" x="1232" y="332" width="336" height="76" rx="8"/>
+    <text class="warn" x="1248" y="356" font-size="13" font-weight="500">⚠ 사실 단정</text>
+    <text class="text-secondary" x="1248" y="380" font-size="13">"전 사용자가 모바일을 선호한다"</text>
+
+    <rect class="warn-soft" x="1232" y="424" width="336" height="76" rx="8"/>
+    <text class="warn" x="1248" y="448" font-size="13" font-weight="500">⚠ 톤 위반</text>
+    <text class="text-secondary" x="1248" y="472" font-size="13">"ASAP 처리" 비공식 표현</text>
+  </g>
+
+  <rect class="accent" x="1232" y="540" width="336" height="40" rx="8"/>
+  <text fill="white" x="1400" y="566" font-size="14" font-weight="500" text-anchor="middle">모두 보강하기</text>
+
+  <!-- Watermark -->
+  <text class="text-tertiary" x="1568" y="980" font-size="11" text-anchor="end" letter-spacing="0.5">ROBOCO ✕ Vibe Coding Workshop</text>
+</svg>
