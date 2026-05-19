@@ -426,6 +426,93 @@ button:focus-visible {
   .showcase-meta { position: static; }
 }
 
+/* Showcase — expanded meta blocks (problem, workflow, outputs) */
+
+.showcase-block {
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border);
+}
+
+.showcase-block-label {
+  font-size: var(--text-meta);
+  color: var(--text-tertiary);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-2);
+}
+
+.showcase-problem {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.showcase-flow {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: flow-step;
+}
+
+.showcase-flow li {
+  counter-increment: flow-step;
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: var(--space-3);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+.showcase-flow li:last-child {
+  margin-bottom: 0;
+}
+
+.showcase-flow li::before {
+  content: counter(flow-step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  background: var(--accent-subtle);
+  color: var(--accent);
+  font-size: var(--text-meta);
+  font-weight: 600;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase-outputs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.showcase-outputs li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.showcase-outputs li:last-child {
+  margin-bottom: 0;
+}
+
+.showcase-outputs li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--status-success);
+  font-weight: 600;
+}
+
 /* ============================================================
    Methodology (§3)
    ============================================================ */
