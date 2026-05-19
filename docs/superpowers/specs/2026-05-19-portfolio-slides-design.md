@@ -94,7 +94,7 @@ vibecoding-for-nondeveloper/portfolio/
 
 **구성요소**
 - H1 (display 56px): "영업·CS·기획·경영지원이 4시간 만에 AI 자동화 도구 5종을 만든다"
-- 보조 카피: "코드 없이, 자연어만으로. Claude 기반 워크숍 — 12명 단위, 4시간."
+- 보조 카피: "코드 없이, 자연어만으로. Claude 기반 워크숍 — 최대 20명, 4시간."
 - 1차 CTA(메일): "도입 문의하기 →"
 - 2차 CTA(스크롤): "결과물 보기 ↓"
 - ROBOCO 워드마크
@@ -162,7 +162,7 @@ vibecoding-for-nondeveloper/portfolio/
 
 | 워크숍 운영 | 사전 설문 근거 | 사전 준비 |
 |------------|--------------|----------|
-| 인원: 12명 | 75% 매일 AI 사용 | Claude 계정 |
+| 인원: 최대 20명 | 75% 매일 AI 사용 | Claude 계정 |
 | 시간: 4시간 | 83% 품질 불안정 | 노트북 |
 | 형식: 온라인/오프라인 | 58% 직접 재작업 | 사내 데이터 정책 확인 |
 | 사전 준비: 1주 전 | 92% 로컬 설치 가능 | |
@@ -173,7 +173,7 @@ vibecoding-for-nondeveloper/portfolio/
 
 **구성요소**
 - 헤드: "팀에 워크숍 도입을 검토하시나요?"
-- 보조: "12명 단위로 운영합니다. 인원·일정·맞춤 사례는 메일로 회신드립니다."
+- 보조: "최대 20명 규모로 운영합니다. 인원·일정·맞춤 사례는 메일로 회신드립니다."
 - CTA: "{문의 이메일} 로 문의하기 →" ⚠ **사용자 확인 필요** — 실제 ROBOCO 문의 이메일 주소로 치환
 - 푸터: "© 2026 ROBOCO. 비개발자 바이브 코딩 워크숍."
 
@@ -445,7 +445,7 @@ Weight: 400 / 500 / 600 / 700.
 
 ```html
 <title>비개발자 바이브 코딩 워크숍 | ROBOCO</title>
-<meta name="description" content="4시간 워크숍 한 번이면 비개발자도 AI 자동화 도구 5종을 직접 만든다. Claude 기반, 12명 단위.">
+<meta name="description" content="4시간 워크숍 한 번이면 비개발자도 AI 자동화 도구 5종을 직접 만든다. Claude 기반, 최대 20명.">
 <meta property="og:image" content="assets/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://roboco-io.github.io/vibecoding-workshop/vibecoding-for-nondeveloper/portfolio/">

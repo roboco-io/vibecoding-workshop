@@ -2,7 +2,7 @@
 
 ## 개요
 
-ROBOCO 바이브 코딩 워크숍 커리큘럼 프로젝트. 개발자 워크숍(15명 규모)과 비개발자 워크숍(12명 규모) 두 트랙을 운영하며, 특정 기업에 종속되지 않은 일반화된 워크숍 자산을 만든다.
+ROBOCO 바이브 코딩 워크숍 커리큘럼 프로젝트. 개발자 워크숍(15명 규모)과 비개발자 워크숍(최대 20명) 두 트랙을 운영하며, 특정 기업에 종속되지 않은 일반화된 워크숍 자산을 만든다.
 
 - **프로젝트 유형**: 워크숍 커리큘럼 (마크다운 문서 + MARP 프레젠테이션)
 - **문서 언어**: 한국어 (기술 용어만 영문 병기)
@@ -35,7 +35,7 @@ ROBOCO 바이브 코딩 워크숍 커리큘럼 프로젝트. 개발자 워크숍
 │   ├── workshop-flow.md           ← 강사 관점 워크숍 흐름
 │   ├── interview-summary.md       ← 기획 심층 인터뷰 결과
 │   └── developer_survey_analysis.md ← 설문 분석
-├── vibecoding-for-nondeveloper/   ← 비개발자 워크숍 (12명, 기획 중)
+├── vibecoding-for-nondeveloper/   ← 비개발자 워크숍 (최대 20명)
 │   └── nondeveloper_servey_analysis.md
 ├── index.md                       ← GitHub Pages 홈
 ├── _config.yml                    ← Jekyll 설정

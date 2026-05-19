@@ -29,7 +29,7 @@ ROBOCO 바이브 코딩 워크숍 커리큘럼 프로젝트. **개발자 워크�
 │   ├── workshop-flow.md               ← 워크숍 흐름 (슬라이드·가이드 작성 기준)
 │   ├── interview-summary.md           ← 기획자 심층 인터뷰 4라운드 결과
 │   └── developer_survey_analysis.md   ← 개발자 설문 분석 (15명)
-├── vibecoding-for-nondeveloper/       ← 비개발자 워크숍 (12명)
+├── vibecoding-for-nondeveloper/       ← 비개발자 워크숍 (최대 20명)
 │   ├── student-guide.md               ← 학생용 워크숍 가이드
 │   ├── presentation.md                ← MARP 슬라이드 소스 (비개발자용)
 │   ├── ideation.md                    ← 워크숍 기획 및 흐름 설계
@@ -94,7 +94,7 @@ make clean        # 빌드 산출물 삭제
 
 ## 비개발자 워크숍 (vibecoding-for-nondeveloper/)
 
-- **대상**: 비개발자 12명 (영업·CS·운영 42%, 기획/PM 17%, 디자인 8%)
+- **대상**: 비개발자 최대 20명 (사전 설문 12명 기준 직군 분포: 영업·CS·운영 42%, 기획/PM 17%, 디자인 8%)
 - **4단계 구조**: 문제 정의(채팅 브레인스토밍) → PRD 작성(심층 인터뷰) → 목업 제작(아티팩트+코드) → 개발 계획(GitHub 이슈 등록)
 - **도구**: 클로드 앱(채팅·코드·코워크·아티팩트 모드) + 코드 CLI + GitHub CLI
 - **핵심 차이**: 코딩 없이 자연어만으로 진행, 클로드 코워크로 환경설정 대행

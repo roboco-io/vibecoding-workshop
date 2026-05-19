@@ -55,7 +55,7 @@ title: Home
 <div class="workshop-card">
 <span class="card-badge badge-nondev">비개발자</span>
 <h3>학생 가이드</h3>
-<p>비개발자 12명 대상. 코딩 없이 클로드와 대화하며 문제 정의 → PRD 작성 → 목업 제작 → 개발 계획 수립까지 진행합니다.</p>
+<p>비개발자 최대 20명 대상. 코딩 없이 클로드와 대화하며 문제 정의 → PRD 작성 → 목업 제작 → 개발 계획 수립까지 진행합니다.</p>
 <div class="card-links">
 <a href="vibecoding-for-nondeveloper/student-guide" class="card-link">가이드 보기</a>
 </div>
