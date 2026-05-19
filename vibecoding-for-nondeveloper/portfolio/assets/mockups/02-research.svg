@@ -1,0 +1,149 @@
+<svg viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-label="경쟁사·시장 리서치 자동 취합 UI 콘셉트">
+  <title>경쟁사·시장 리서치 자동 취합</title>
+  <desc>상단 자료 메타 + 중앙 비교표 + 우측 인사이트 패널</desc>
+  <defs>
+    <style>
+      .bg       { fill: #FFFFFF; }
+      .bg-elev  { fill: #FAFAFA; }
+      .bg-row   { fill: #FAFAFA; }
+      .border   { stroke: #E5E7EB; stroke-width: 1; fill: none; }
+      .text-primary   { fill: #0A0A0A; font-family: Pretendard, system-ui, sans-serif; }
+      .text-secondary { fill: #525252; font-family: Pretendard, system-ui, sans-serif; }
+      .text-tertiary  { fill: #A3A3A3; font-family: Pretendard, system-ui, sans-serif; }
+      .accent   { fill: #5B5BD6; }
+      .warn     { fill: #D97706; }
+      .dot-on   { fill: #5B5BD6; }
+      .dot-off  { fill: #E5E7EB; }
+      .insight  { fill: #EEF0FF; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="1000" rx="12"/>
+  <rect class="border" x="0.5" y="0.5" width="1599" height="999" rx="12"/>
+
+  <!-- Header -->
+  <rect class="bg-elev" x="0" y="0" width="1600" height="64"/>
+  <line x1="0" y1="64" x2="1600" y2="64" stroke="#E5E7EB"/>
+  <circle class="accent" cx="32" cy="32" r="6"/>
+  <text class="text-primary" x="48" y="36" font-size="16" font-weight="600">Research</text>
+  <rect class="accent" x="1432" y="16" width="136" height="32" rx="8"/>
+  <text fill="white" x="1500" y="36" font-size="13" font-weight="500" text-anchor="middle">새 리서치 +</text>
+
+  <!-- Input meta bar -->
+  <text class="text-secondary" x="32" y="104" font-size="13">투입 자료:</text>
+  <text class="text-primary" x="128" y="104" font-size="14">📎 URL 3</text>
+  <text class="text-primary" x="220" y="104" font-size="14">📄 PDF 2</text>
+  <text class="text-primary" x="316" y="104" font-size="14">📝 메모 5</text>
+
+  <text class="text-secondary" x="32" y="132" font-size="13">비교 차원:</text>
+  <text class="text-primary" x="128" y="132" font-size="14">타겟 / 가격 / 핵심기능 / 차별점 / UX / 시장지위</text>
+
+  <line x1="0" y1="160" x2="1600" y2="160" stroke="#E5E7EB"/>
+
+  <!-- Split: comparison 1120 + insights 480 -->
+  <line x1="1120" y1="160" x2="1120" y2="1000" stroke="#E5E7EB"/>
+
+  <!-- Comparison table header -->
+  <g font-family="Pretendard, system-ui, sans-serif">
+    <text class="text-tertiary" x="32" y="208" font-size="12" letter-spacing="0.5">차원</text>
+    <text class="text-primary"  x="220" y="208" font-size="14" font-weight="600" text-anchor="middle">Acme</text>
+    <text class="text-primary"  x="380" y="208" font-size="14" font-weight="600" text-anchor="middle">Beta</text>
+    <text class="text-primary"  x="540" y="208" font-size="14" font-weight="600" text-anchor="middle">Gamma</text>
+    <text class="text-primary"  x="700" y="208" font-size="14" font-weight="600" text-anchor="middle">Delta</text>
+    <text class="text-primary"  x="860" y="208" font-size="14" font-weight="600" text-anchor="middle">Epsilon</text>
+  </g>
+  <line x1="16" y1="224" x2="1088" y2="224" stroke="#E5E7EB"/>
+
+  <!-- Rows -->
+  <g font-size="14" font-family="Pretendard, system-ui, sans-serif">
+    <text class="text-secondary" x="32"  y="256">타겟</text>
+    <text class="text-primary"   x="220" y="256" text-anchor="middle">엔터프</text>
+    <text class="text-primary"   x="380" y="256" text-anchor="middle">중소</text>
+    <text class="text-primary"   x="540" y="256" text-anchor="middle">스타트업</text>
+    <text class="text-primary"   x="700" y="256" text-anchor="middle">엔터프</text>
+    <text class="text-primary"   x="860" y="256" text-anchor="middle">중소</text>
+
+    <text class="text-secondary" x="32"  y="296">가격</text>
+    <text class="text-primary"   x="220" y="296" text-anchor="middle">$$$$</text>
+    <text class="text-primary"   x="380" y="296" text-anchor="middle">$$$</text>
+    <text class="text-primary"   x="540" y="296" text-anchor="middle">$</text>
+    <text class="text-primary"   x="700" y="296" text-anchor="middle">$$$$</text>
+    <text class="text-primary"   x="860" y="296" text-anchor="middle">$$</text>
+  </g>
+
+  <!-- 핵심기능 row with dots -->
+  <text class="text-secondary" x="32" y="336" font-size="14">핵심기능</text>
+  <g transform="translate(220, 332)">
+    <circle class="dot-on"  cx="-24" cy="0" r="4"/><circle class="dot-on"  cx="-12" cy="0" r="4"/>
+    <circle class="dot-on"  cx="0"   cy="0" r="4"/><circle class="dot-off" cx="12"  cy="0" r="4"/>
+    <circle class="dot-off" cx="24"  cy="0" r="4"/>
+  </g>
+  <g transform="translate(380, 332)">
+    <circle class="dot-on"  cx="-24" cy="0" r="4"/><circle class="dot-on"  cx="-12" cy="0" r="4"/>
+    <circle class="dot-on"  cx="0"   cy="0" r="4"/><circle class="dot-on"  cx="12"  cy="0" r="4"/>
+    <circle class="dot-off" cx="24"  cy="0" r="4"/>
+  </g>
+  <g transform="translate(540, 332)">
+    <circle class="dot-on"  cx="-24" cy="0" r="4"/><circle class="dot-on"  cx="-12" cy="0" r="4"/>
+    <circle class="dot-off" cx="0"   cy="0" r="4"/><circle class="dot-off" cx="12"  cy="0" r="4"/>
+    <circle class="dot-off" cx="24"  cy="0" r="4"/>
+  </g>
+  <g transform="translate(700, 332)">
+    <circle class="dot-on"  cx="-24" cy="0" r="4"/><circle class="dot-on"  cx="-12" cy="0" r="4"/>
+    <circle class="dot-on"  cx="0"   cy="0" r="4"/><circle class="dot-off" cx="12"  cy="0" r="4"/>
+    <circle class="dot-off" cx="24"  cy="0" r="4"/>
+  </g>
+  <g transform="translate(860, 332)">
+    <circle class="dot-on"  cx="-24" cy="0" r="4"/><circle class="dot-on"  cx="-12" cy="0" r="4"/>
+    <circle class="dot-on"  cx="0"   cy="0" r="4"/><circle class="dot-on"  cx="12"  cy="0" r="4"/>
+    <circle class="dot-on"  cx="24"  cy="0" r="4"/>
+  </g>
+
+  <g font-size="14" font-family="Pretendard, system-ui, sans-serif">
+    <text class="text-secondary" x="32"  y="376">차별점</text>
+    <text class="text-primary"   x="220" y="376" text-anchor="middle">보안</text>
+    <text class="text-primary"   x="380" y="376" text-anchor="middle">UX</text>
+    <text class="text-primary"   x="540" y="376" text-anchor="middle">속도</text>
+    <text class="text-primary"   x="700" y="376" text-anchor="middle">SI</text>
+    <text class="text-primary"   x="860" y="376" text-anchor="middle">가격</text>
+
+    <text class="text-secondary" x="32"  y="416">UX</text>
+    <text class="warn"           x="220" y="416" text-anchor="middle">⚠ 확인</text>
+    <text class="text-primary"   x="380" y="416" text-anchor="middle">●●●●○</text>
+    <text class="text-primary"   x="540" y="416" text-anchor="middle">●●●○○</text>
+    <text class="warn"           x="700" y="416" text-anchor="middle">⚠ 확인</text>
+    <text class="text-primary"   x="860" y="416" text-anchor="middle">●●●○○</text>
+
+    <text class="text-secondary" x="32"  y="456">시장지위</text>
+    <text class="text-primary"   x="220" y="456" text-anchor="middle">1위</text>
+    <text class="text-primary"   x="380" y="456" text-anchor="middle">3위</text>
+    <text class="text-primary"   x="540" y="456" text-anchor="middle">신규</text>
+    <text class="text-primary"   x="700" y="456" text-anchor="middle">2위</text>
+    <text class="text-primary"   x="860" y="456" text-anchor="middle">4위</text>
+  </g>
+
+  <!-- Footer note below table -->
+  <line x1="16" y1="500" x2="1088" y2="500" stroke="#E5E7EB"/>
+  <text class="warn" x="32" y="540" font-size="13">⚠ 추가 리서치 필요: Acme·Delta UX 분석 / Beta 가격 정책 세부</text>
+
+  <!-- Insights panel -->
+  <text class="text-secondary" x="1152" y="200" font-size="14" font-weight="600">💡 인사이트</text>
+  <line x1="1152" y1="216" x2="1568" y2="216" stroke="#E5E7EB"/>
+  <g font-family="Pretendard, system-ui, sans-serif" font-size="14">
+    <rect class="insight" x="1152" y="240" width="416" height="80" rx="8"/>
+    <text class="text-primary" x="1168" y="264" font-weight="500">• Acme·Delta는 공통 엔터프 타겟</text>
+    <text class="text-secondary" x="1184" y="288" font-size="13">→ 가격 경쟁이 발생할 가능성</text>
+
+    <rect class="insight" x="1152" y="336" width="416" height="80" rx="8"/>
+    <text class="text-primary" x="1168" y="360" font-weight="500">• Epsilon UX 공백 발견</text>
+    <text class="text-secondary" x="1184" y="384" font-size="13">→ UI 패턴 5종 공통 식별</text>
+
+    <rect class="insight" x="1152" y="432" width="416" height="80" rx="8"/>
+    <text class="text-primary" x="1168" y="456" font-weight="500">• Gamma 신규 진입</text>
+    <text class="text-secondary" x="1184" y="480" font-size="13">→ 속도 차별점 모니터링 권장</text>
+  </g>
+
+  <!-- Watermark -->
+  <text class="text-tertiary" x="1568" y="980" font-size="11" text-anchor="end" letter-spacing="0.5">ROBOCO ✕ Vibe Coding Workshop</text>
+</svg>
