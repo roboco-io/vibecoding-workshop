@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-다이렉트 클라우드클럽 바이브 코딩 워크숍 준비 프로젝트. **개발자 워크숍**과 **비개발자 워크숍** 두 트랙을 운영한다.
+ROBOCO 바이브 코딩 워크숍 커리큘럼 프로젝트. **개발자 워크숍**과 **비개발자 워크숍** 두 트랙을 운영한다. 특정 기업에 종속되지 않은 일반화된 워크숍 자산을 만든다.
 
 ## Language & Writing Conventions
 
@@ -31,6 +31,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 │   └── developer_survey_analysis.md   ← 개발자 설문 분석 (15명)
 ├── vibecoding-for-nondeveloper/       ← 비개발자 워크숍 (12명)
 │   ├── student-guide.md               ← 학생용 워크숍 가이드
+│   ├── presentation.md                ← MARP 슬라이드 소스 (비개발자용)
 │   ├── ideation.md                    ← 워크숍 기획 및 흐름 설계
 │   └── nondeveloper_servey_analysis.md ← 비개발자 설문 분석 (12명)
 ├── openspec/                          ← OpenSpec 변경 관리 (스펙 기반 워크플로우)
@@ -44,7 +45,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 공통 강의 자료 (common/)
 
-다이렉트 클라우드클럽 시니어 개발자 15명 대상 강의 자료. MARP 기반 프레젠테이션으로 구성.
+양 트랙 공통 강의 자료. MARP 기반 프레젠테이션으로 구성.
 
 - **Part 1**: 바이브 코딩의 현 주소 — 정의, Anthropic 사례, OpenClaw 케이스 스터디, 도입 방법
 - **Part 2**: 모던 소프트웨어 엔지니어링 — David Farley 원칙, Claude Code 심화, OMC 소개
@@ -62,7 +63,7 @@ make clean        # 빌드 산출물 삭제
 
 - **자동 배포**: `main` 브랜치 push 시 GitHub Actions가 Jekyll + MARP 빌드 후 GitHub Pages에 배포
 - **Jekyll 테마**: `jekyll-theme-cayman` — `_config.yml`의 `exclude` 목록으로 내부 문서 노출 제어
-- **발행 대상 페이지**: `index.md` (홈), `common/narrative.md`, `vibecoding-for-developer/student-guide.md`, `common/presentation.html` (MARP 슬라이드)
+- **발행 대상 페이지**: `index.md` (홈), `common/narrative.md`, `vibecoding-for-developer/student-guide.md`, `common/presentation.html` (공통 슬라이드), `vibecoding-for-nondeveloper/presentation.html` (비개발자 슬라이드)
 - **로컬 미리보기**: `bundle install && bundle exec jekyll serve`
 
 ## 개발자 워크숍 (vibecoding-for-developer/)

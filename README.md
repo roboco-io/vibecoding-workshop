@@ -1,10 +1,10 @@
-# 다이렉트 클라우드클럽 바이브 코딩 워크숍
+# 바이브 코딩 워크숍
 
-[![Deploy to GitHub Pages](https://github.com/directcloudlab/viebcoding-workshop/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/directcloudlab/viebcoding-workshop/actions/workflows/deploy-pages.yml)
+[![Deploy to GitHub Pages](https://github.com/roboco-io/vibecoding-workshop/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/roboco-io/vibecoding-workshop/actions/workflows/deploy-pages.yml)
 
-**GitHub Pages:** https://directcloudlab.github.io/viebcoding-workshop/
+**GitHub Pages:** https://roboco-io.github.io/vibecoding-workshop/
 
-다이렉트 클라우드랩의 바이브 코딩 워크숍을 준비하기 위한 프로젝트.
+ROBOCO가 제공하는 바이브 코딩 워크숍 커리큘럼 프로젝트.
 
 개발자와 비개발자를 위한 두 가지 워크숍 트랙을 설계·운영한다.
 

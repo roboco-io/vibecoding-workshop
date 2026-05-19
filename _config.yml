@@ -1,10 +1,10 @@
-title: "다이렉트 클라우드클럽 바이브 코딩 워크숍"
-description: "바이브 코딩 워크숍 자료"
+title: "바이브 코딩 워크숍"
+description: "ROBOCO 바이브 코딩 워크숍 — 개발자·비개발자 트랙"
 baseurl: ""
-url: "https://crispy-carnival-qj1ryn7.pages.github.io"
+url: "https://roboco-io.github.io/vibecoding-workshop"
 
 theme: jekyll-theme-cayman
-repository: directcloudlab/viebcoding-workshop
+repository: roboco-io/vibecoding-workshop
 
 exclude:
   - Gemfile
