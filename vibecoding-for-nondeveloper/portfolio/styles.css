@@ -567,3 +567,96 @@ button:focus-visible {
   text-align: center;
   color: var(--text-secondary);
 }
+
+/* ============================================================
+   Operations (§5)
+   ============================================================ */
+
+.operations {
+  padding: var(--space-24) 0;
+  background: var(--bg-subtle);
+  border-block: 1px solid var(--border);
+}
+
+.operations-header {
+  text-align: center;
+  margin-bottom: var(--space-16);
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+.operations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.operations-col {
+  padding: var(--space-8);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.operations-col h3 {
+  margin-bottom: var(--space-4);
+  font-size: var(--text-h3);
+  font-weight: 600;
+}
+
+.operations-row {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--border);
+  font-size: var(--text-sm);
+}
+
+.operations-row:last-child { border-bottom: none; }
+
+.operations-row span:first-child { color: var(--text-secondary); }
+.operations-row span:last-child  { color: var(--text-primary); font-weight: 500; }
+
+@media (max-width: 1024px) {
+  .operations-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   Final CTA (§6) + Footer
+   ============================================================ */
+
+.cta {
+  padding: var(--space-24) 0;
+  text-align: center;
+}
+
+.cta h2 {
+  margin-bottom: var(--space-4);
+}
+
+.cta p {
+  max-width: 540px;
+  margin: 0 auto var(--space-8);
+  color: var(--text-secondary);
+}
+
+.cta .btn-primary {
+  height: 48px;
+  padding: 0 var(--space-8);
+  font-size: var(--text-body);
+}
+
+.footer {
+  padding: var(--space-12) 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--text-tertiary);
+  font-size: var(--text-meta);
+}
+
+.footer-brand {
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-2);
+}
