@@ -425,3 +425,145 @@ button:focus-visible {
   }
   .showcase-meta { position: static; }
 }
+
+/* ============================================================
+   Methodology (§3)
+   ============================================================ */
+
+.methodology {
+  padding: var(--space-24) 0;
+  background: var(--bg-subtle);
+  border-block: 1px solid var(--border);
+}
+
+.methodology-header {
+  text-align: center;
+  margin-bottom: var(--space-16);
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+.methodology-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  margin-bottom: var(--space-12);
+}
+
+.methodology-card {
+  padding: var(--space-12);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.methodology-card h3 {
+  margin-bottom: var(--space-4);
+}
+
+.methodology-quote {
+  margin-bottom: var(--space-6);
+  padding: var(--space-4);
+  background: var(--accent-subtle);
+  border-radius: var(--radius);
+  font-size: var(--text-h3);
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.methodology-arrow {
+  margin-block: var(--space-3);
+  text-align: center;
+  color: var(--text-tertiary);
+}
+
+.methodology-outcome {
+  color: var(--text-secondary);
+}
+
+.methodology-footnote {
+  max-width: 760px;
+  margin-inline: auto;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .methodology-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   Matrix (§4)
+   ============================================================ */
+
+.matrix {
+  padding: var(--space-24) 0;
+}
+
+.matrix-header {
+  text-align: center;
+  margin-bottom: var(--space-12);
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+.matrix-table-wrap {
+  overflow-x: auto;
+  margin-bottom: var(--space-6);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+
+.matrix-table th,
+.matrix-table td {
+  padding: var(--space-3) var(--space-4);
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.matrix-table th {
+  font-weight: 600;
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+}
+
+.matrix-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.matrix-table td:first-child,
+.matrix-table th:first-child {
+  text-align: left;
+  font-weight: 500;
+  background: var(--bg-elevated);
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+
+.matrix-cell-full { color: var(--accent); font-weight: 600; }
+.matrix-cell-half { color: var(--text-secondary); }
+.matrix-cell-low  { color: var(--text-tertiary); }
+
+.matrix-legend {
+  display: flex;
+  gap: var(--space-6);
+  justify-content: center;
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-6);
+}
+
+.matrix-footnote {
+  max-width: 760px;
+  margin-inline: auto;
+  text-align: center;
+  color: var(--text-secondary);
+}
