@@ -27,17 +27,17 @@
   <rect class="bg-elev" x="0" y="0" width="1600" height="64"/>
   <line x1="0" y1="64" x2="1600" y2="64" stroke="#E5E7EB"/>
   <circle class="accent" cx="32" cy="32" r="6"/>
-  <text class="text-primary" x="48" y="36" font-size="16" font-weight="600">Budget Studio</text>
+  <text class="text-primary" x="48" y="36" font-size="22" font-weight="600">Budget Studio</text>
   <rect class="bg-elev" x="1284" y="16" width="120" height="32" rx="8"/>
   <rect class="border" x="1284.5" y="16.5" width="119" height="31" rx="8"/>
-  <text class="text-primary" x="1344" y="36" font-size="13" text-anchor="middle">시나리오 비교</text>
+  <text class="text-primary" x="1344" y="36" font-size="18" text-anchor="middle">시나리오 비교</text>
   <rect class="accent" x="1416" y="16" width="152" height="32" rx="8"/>
-  <text fill="white" x="1492" y="36" font-size="13" font-weight="500" text-anchor="middle">Excel 다운 ↓</text>
+  <text fill="white" x="1492" y="36" font-size="18" font-weight="500" text-anchor="middle">Excel 다운 ↓</text>
 
   <!-- Scenario sliders -->
-  <text class="text-secondary" x="32" y="104" font-size="13" letter-spacing="0.5">시나리오 변수</text>
+  <text class="text-secondary" x="32" y="104" font-size="18" letter-spacing="0.5">시나리오 변수</text>
 
-  <g font-family="Pretendard, system-ui, sans-serif" font-size="13">
+  <g font-family="Pretendard, system-ui, sans-serif" font-size="18">
     <!-- row 1 -->
     <text class="text-primary" x="32" y="148">인건비</text>
     <rect class="slider-track" x="120" y="142" width="200" height="6" rx="3"/>
@@ -74,7 +74,7 @@
   <line x1="0" y1="240" x2="1600" y2="240" stroke="#E5E7EB"/>
 
   <!-- Spreadsheet -->
-  <g font-family="ui-monospace, SFMono-Regular, monospace" font-size="13">
+  <g font-family="ui-monospace, SFMono-Regular, monospace" font-size="18">
     <!-- column headers -->
     <text class="text-tertiary" x="48"  y="280">A</text>
     <text class="text-tertiary" x="248" y="280">B</text>
@@ -137,8 +137,8 @@
   <line x1="0" y1="580" x2="1600" y2="580" stroke="#E5E7EB"/>
 
   <!-- Diff analysis -->
-  <text class="text-secondary" x="32" y="624" font-size="14" font-weight="600">📊 차이 분석</text>
-  <g font-family="Pretendard, system-ui, sans-serif" font-size="14">
+  <text class="text-secondary" x="32" y="624" font-size="19" font-weight="600">📊 차이 분석</text>
+  <g font-family="Pretendard, system-ui, sans-serif" font-size="19">
     <rect class="insight" x="32" y="644" width="1536" height="48" rx="8"/>
     <text class="text-primary" x="48" y="676">• 마케팅 -6.5% (계획 200M → 실적 187M)</text>
     <text class="text-secondary" x="520" y="676">사유 후보: 캠페인 1건 이월</text>
@@ -149,5 +149,5 @@
   </g>
 
   <!-- Watermark -->
-  <text class="text-tertiary" x="1568" y="980" font-size="11" text-anchor="end" letter-spacing="0.5">ROBOCO ✕ Vibe Coding Workshop</text>
+  <text class="text-tertiary" x="1568" y="980" font-size="15" text-anchor="end" letter-spacing="0.5">ROBOCO ✕ Vibe Coding Workshop</text>
 </svg>

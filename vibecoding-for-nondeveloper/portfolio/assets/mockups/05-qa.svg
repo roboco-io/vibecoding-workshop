@@ -29,21 +29,21 @@
   <rect class="bg-elev" x="0" y="0" width="1600" height="64"/>
   <line x1="0" y1="64" x2="1600" y2="64" stroke="#E5E7EB"/>
   <circle class="accent" cx="32" cy="32" r="6"/>
-  <text class="text-primary" x="48" y="36" font-size="16" font-weight="600">QA Studio</text>
-  <text class="text-secondary" x="220" y="36" font-size="13">기능:</text>
-  <text class="text-primary" x="260" y="36" font-size="14" font-weight="500">결재 위임</text>
+  <text class="text-primary" x="48" y="36" font-size="22" font-weight="600">QA Studio</text>
+  <text class="text-secondary" x="220" y="36" font-size="18">기능:</text>
+  <text class="text-primary" x="260" y="36" font-size="19" font-weight="500">결재 위임</text>
   <rect class="accent" x="1408" y="16" width="160" height="32" rx="8"/>
-  <text fill="white" x="1488" y="36" font-size="13" font-weight="500" text-anchor="middle">PDF Plan 다운 ↓</text>
+  <text fill="white" x="1488" y="36" font-size="18" font-weight="500" text-anchor="middle">PDF Plan 다운 ↓</text>
 
   <!-- Three columns: 400 / 800 / 400 -->
   <line x1="400"  y1="64" x2="400"  y2="1000" stroke="#E5E7EB"/>
   <line x1="1200" y1="64" x2="1200" y2="1000" stroke="#E5E7EB"/>
 
   <!-- LEFT: feature spec -->
-  <text class="text-primary" x="32" y="108" font-size="14" font-weight="600">기능 명세</text>
+  <text class="text-primary" x="32" y="108" font-size="19" font-weight="600">기능 명세</text>
   <line x1="32" y1="124" x2="368" y2="124" stroke="#E5E7EB"/>
 
-  <g font-family="Pretendard, system-ui, sans-serif" font-size="14">
+  <g font-family="Pretendard, system-ui, sans-serif" font-size="19">
     <text class="text-primary" x="32" y="160">• 위임 설정</text>
     <text class="text-primary" x="32" y="188">• 위임 기간</text>
     <text class="text-primary" x="32" y="216">• 위임 알림</text>
@@ -52,7 +52,7 @@
     <text class="text-primary" x="32" y="304" font-weight="600">변경 영향</text>
   </g>
   <line x1="32" y1="320" x2="368" y2="320" stroke="#E5E7EB"/>
-  <g font-family="Pretendard, system-ui, sans-serif" font-size="14">
+  <g font-family="Pretendard, system-ui, sans-serif" font-size="19">
     <text class="text-primary" x="32" y="356">→ 결재 라인</text>
     <text class="text-primary" x="32" y="384">→ 알림 큐</text>
     <text class="text-primary" x="32" y="412">→ 통계 집계</text>
@@ -64,15 +64,15 @@
   <!-- CENTER: tabs + test cases -->
   <g transform="translate(432, 96)" font-family="Pretendard, system-ui, sans-serif">
     <rect class="accent-soft" x="0" y="0" width="84" height="32" rx="8"/>
-    <text class="accent" x="42" y="22" font-size="13" font-weight="600" text-anchor="middle">정상 6</text>
-    <text class="text-secondary" x="118" y="22" font-size="13" text-anchor="middle">경계 4</text>
-    <text class="text-secondary" x="196" y="22" font-size="13" text-anchor="middle">예외 7</text>
-    <text class="text-secondary" x="274" y="22" font-size="13" text-anchor="middle">회귀 3</text>
+    <text class="accent" x="42" y="22" font-size="18" font-weight="600" text-anchor="middle">정상 6</text>
+    <text class="text-secondary" x="118" y="22" font-size="18" text-anchor="middle">경계 4</text>
+    <text class="text-secondary" x="196" y="22" font-size="18" text-anchor="middle">예외 7</text>
+    <text class="text-secondary" x="274" y="22" font-size="18" text-anchor="middle">회귀 3</text>
   </g>
   <line x1="432" y1="156" x2="1168" y2="156" stroke="#E5E7EB"/>
 
   <!-- Table header -->
-  <g font-family="Pretendard, system-ui, sans-serif" font-size="13">
+  <g font-family="Pretendard, system-ui, sans-serif" font-size="18">
     <text class="text-tertiary" x="448"  y="188" letter-spacing="0.5">ID</text>
     <text class="text-tertiary" x="528"  y="188" letter-spacing="0.5">조건</text>
     <text class="text-tertiary" x="880"  y="188" letter-spacing="0.5">기대 결과</text>
@@ -81,7 +81,7 @@
   <line x1="432" y1="200" x2="1168" y2="200" stroke="#E5E7EB"/>
 
   <!-- Rows -->
-  <g font-family="Pretendard, system-ui, sans-serif" font-size="14">
+  <g font-family="Pretendard, system-ui, sans-serif" font-size="19">
     <rect class="bg-row-alt" x="432" y="208" width="736" height="44"/>
     <text class="text-primary" x="448" y="236">T-01</text>
     <text class="text-secondary" x="528" y="236">본인 결재 위임</text>
@@ -120,35 +120,35 @@
   <g transform="translate(432, 500)">
     <rect class="bg-elev" x="0" y="0" width="140" height="36" rx="8"/>
     <rect class="border" x="0.5" y="0.5" width="139" height="35" rx="8"/>
-    <text class="text-primary" x="70" y="22" font-size="13" text-anchor="middle">+ 케이스 추가</text>
+    <text class="text-primary" x="70" y="22" font-size="18" text-anchor="middle">+ 케이스 추가</text>
     <rect class="bg-elev" x="156" y="0" width="160" height="36" rx="8"/>
     <rect class="border" x="156.5" y="0.5" width="159" height="35" rx="8"/>
-    <text class="text-primary" x="236" y="22" font-size="13" text-anchor="middle">회귀 후보 보기</text>
+    <text class="text-primary" x="236" y="22" font-size="18" text-anchor="middle">회귀 후보 보기</text>
   </g>
 
   <!-- RIGHT: risk areas -->
-  <text class="text-primary" x="1232" y="108" font-size="14" font-weight="600">⚠ 위험 영역</text>
+  <text class="text-primary" x="1232" y="108" font-size="19" font-weight="600">⚠ 위험 영역</text>
   <line x1="1232" y1="124" x2="1568" y2="124" stroke="#E5E7EB"/>
 
   <g font-family="Pretendard, system-ui, sans-serif">
     <rect class="risk-soft" x="1232" y="148" width="336" height="76" rx="8"/>
-    <text class="warn" x="1248" y="172" font-size="13" font-weight="500">• 동시성</text>
-    <text class="text-secondary" x="1248" y="196" font-size="13">다중 결재 동시 발생</text>
+    <text class="warn" x="1248" y="172" font-size="18" font-weight="500">• 동시성</text>
+    <text class="text-secondary" x="1248" y="196" font-size="18">다중 결재 동시 발생</text>
 
     <rect class="risk-soft" x="1232" y="240" width="336" height="76" rx="8"/>
-    <text class="warn" x="1248" y="264" font-size="13" font-weight="500">• 권한</text>
-    <text class="text-secondary" x="1248" y="288" font-size="13">상위 위임 — 권한 상승 위험</text>
+    <text class="warn" x="1248" y="264" font-size="18" font-weight="500">• 권한</text>
+    <text class="text-secondary" x="1248" y="288" font-size="18">상위 위임 — 권한 상승 위험</text>
 
     <rect class="risk-soft" x="1232" y="332" width="336" height="76" rx="8"/>
-    <text class="warn" x="1248" y="356" font-size="13" font-weight="500">• 데이터 마이그레이션</text>
-    <text class="text-secondary" x="1248" y="380" font-size="13">진행 중 결재 처리 방안</text>
+    <text class="warn" x="1248" y="356" font-size="18" font-weight="500">• 데이터 마이그레이션</text>
+    <text class="text-secondary" x="1248" y="380" font-size="18">진행 중 결재 처리 방안</text>
 
     <rect class="bg-elev" x="1232" y="424" width="336" height="60" rx="8"/>
     <rect class="border" x="1232.5" y="424.5" width="335" height="59" rx="8"/>
-    <text class="check" x="1248" y="448" font-size="13">✓ 보안</text>
-    <text class="text-secondary" x="1248" y="468" font-size="13">결제 — 해당 없음</text>
+    <text class="check" x="1248" y="448" font-size="18">✓ 보안</text>
+    <text class="text-secondary" x="1248" y="468" font-size="18">결제 — 해당 없음</text>
   </g>
 
   <!-- Watermark -->
-  <text class="text-tertiary" x="1568" y="980" font-size="11" text-anchor="end" letter-spacing="0.5">ROBOCO ✕ Vibe Coding Workshop</text>
+  <text class="text-tertiary" x="1568" y="980" font-size="15" text-anchor="end" letter-spacing="0.5">ROBOCO ✕ Vibe Coding Workshop</text>
 </svg>

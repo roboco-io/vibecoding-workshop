@@ -340,6 +340,12 @@ button:focus-visible {
   padding: var(--space-24) 0;
 }
 
+/* Showcase is the visual centerpiece — give it a wider container
+   so the mockup snapshots render large enough to read. */
+.showcase > .container {
+  max-width: 1400px;
+}
+
 .showcase-header {
   text-align: center;
   margin-bottom: var(--space-16);
@@ -375,7 +381,7 @@ button:focus-visible {
 
 .showcase-item {
   display: grid;
-  grid-template-columns: 320px 1fr;
+  grid-template-columns: 280px 1fr;
   gap: var(--space-12);
   align-items: start;
 }
