@@ -56,6 +56,15 @@
 
   /* Container */
   --container: 1200px;
+
+  /* Code / terminal — added for developer track */
+  --code-bg: #0D0D10;
+  --code-text: #E4E4E7;
+  --code-prompt: #7FB069;
+  --code-output-dim: rgba(228, 228, 231, 0.7);
+  --code-success: #4ADE80;
+  --code-error: #F87171;
+  --code-border: #2D2D35;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -71,6 +80,9 @@
     --accent: #818CF8;
     --accent-hover: #A5B4FC;
     --accent-subtle: #1E1B4B;
+    --code-bg: #050507;
+    --code-text: #FAFAFA;
+    --code-border: #1F1F25;
   }
 }
 
@@ -770,4 +782,51 @@ button:focus-visible {
   letter-spacing: 0.1em;
   color: var(--text-secondary);
   margin-bottom: var(--space-2);
+}
+
+/* ====== Code / terminal blocks (developer track) ====== */
+
+.code-block {
+  font-family: "SF Mono", Menlo, "Cascadia Code", Consolas, monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  background: var(--code-bg);
+  color: var(--code-text);
+  padding: var(--space-4);
+  border-radius: var(--radius);
+  border: 1px solid var(--code-border);
+  overflow-x: auto;
+}
+
+.code-block .code-prompt { color: var(--code-prompt); }
+.code-block .code-output-dim { color: var(--code-output-dim); }
+.code-block .code-success { color: var(--code-success); }
+.code-block .code-error { color: var(--code-error); }
+
+/* Color-independent encoding: success/fail labels next to the symbol */
+.code-block .code-label {
+  font-size: 11px;
+  margin-left: var(--space-2);
+  padding: 0 6px;
+  border-radius: 4px;
+  border: 1px solid currentColor;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Dark-mode shadow boost for the code block outline */
+@media (prefers-color-scheme: dark) {
+  .code-block {
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+  }
+}
+
+/* ====== DORA matrix cells (developer track) ====== */
+
+.matrix-dora td .dora-label {
+  display: inline-block;
+  font-size: 11px;
+  margin-left: 6px;
+  opacity: 0.65;
+  letter-spacing: 0.02em;
 }
