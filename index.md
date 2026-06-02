@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Home
+title: 바이브 코딩 워크숍
+description: ROBOCO 바이브 코딩 워크숍 — 개발자·비개발자 트랙
+image: /vibecoding-for-developer/portfolio/assets/og-image.png
 ---
-
-# 바이브 코딩 워크숍
 
 > AI를 팀원으로 두고 소프트웨어 라이프사이클 전반에서 협업하는 방식을 직접 체험합니다.
 
@@ -12,6 +12,24 @@ title: Home
 ## 개발자 트랙
 
 <div class="workshop-cards">
+<div class="workshop-card">
+<span class="card-badge badge-common">소개</span>
+<h3>개발자 워크숍 랜딩</h3>
+<p>엔지니어링 매니저·CTO에게 워크숍을 소개하는 단일 페이지. 5개 모범사례 쇼케이스, DORA 매트릭스, 운영 안내를 담았습니다.</p>
+<div class="card-links">
+<a href="vibecoding-for-developer/portfolio/" class="card-link">랜딩 보기</a>
+</div>
+</div>
+
+<div class="workshop-card">
+<span class="card-badge badge-dev">개발자</span>
+<h3>학생 가이드</h3>
+<p>시니어 개발자 15명 대상 4시간 실습. 문서화 → 테스트 구현 → CI/CD 구축의 3단계로 AI를 개발 파이프라인에 안전하게 통합합니다.</p>
+<div class="card-links">
+<a href="vibecoding-for-developer/student-guide" class="card-link">가이드 보기</a>
+</div>
+</div>
+
 <div class="workshop-card">
 <span class="card-badge badge-dev">개발자</span>
 <h3>프레젠테이션 슬라이드</h3>
@@ -29,26 +47,17 @@ title: Home
 <a href="common/narrative" class="card-link">읽기</a>
 </div>
 </div>
-
-<div class="workshop-card">
-<span class="card-badge badge-dev">개발자</span>
-<h3>학생 가이드</h3>
-<p>시니어 개발자 15명 대상 4시간 실습. 문서화 → 테스트 구현 → CI/CD 구축의 3단계로 AI를 개발 파이프라인에 안전하게 통합합니다.</p>
-<div class="card-links">
-<a href="vibecoding-for-developer/student-guide" class="card-link">가이드 보기</a>
-</div>
-</div>
 </div>
 
 ## 비개발자 트랙
 
 <div class="workshop-cards">
 <div class="workshop-card">
-<span class="card-badge badge-nondev">비개발자</span>
-<h3>프레젠테이션 슬라이드</h3>
-<p>비개발자를 위한 바이브 코딩 워크숍 발표 자료.</p>
+<span class="card-badge badge-common">소개</span>
+<h3>비개발자 워크숍 랜딩</h3>
+<p>코딩 없이 AI와 협업해 업무를 자동화하는 워크숍을 비개발자·실무 리더에게 소개하는 단일 페이지.</p>
 <div class="card-links">
-<a href="vibecoding-for-nondeveloper/presentation.html" class="card-link">슬라이드 보기</a>
+<a href="vibecoding-for-nondeveloper/portfolio/" class="card-link">랜딩 보기</a>
 </div>
 </div>
 
@@ -58,6 +67,15 @@ title: Home
 <p>비개발자 최대 20명 대상. 코딩 없이 클로드와 대화하며 문제 정의 → PRD 작성 → 목업 제작 → 개발 계획 수립까지 진행합니다.</p>
 <div class="card-links">
 <a href="vibecoding-for-nondeveloper/student-guide" class="card-link">가이드 보기</a>
+</div>
+</div>
+
+<div class="workshop-card">
+<span class="card-badge badge-nondev">비개발자</span>
+<h3>프레젠테이션 슬라이드</h3>
+<p>비개발자를 위한 바이브 코딩 워크숍 발표 자료.</p>
+<div class="card-links">
+<a href="vibecoding-for-nondeveloper/presentation.html" class="card-link">슬라이드 보기</a>
 </div>
 </div>
 </div>

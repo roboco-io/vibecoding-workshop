@@ -2,6 +2,7 @@ title: "바이브 코딩 워크숍"
 description: "ROBOCO 바이브 코딩 워크숍 — 개발자·비개발자 트랙"
 baseurl: ""
 url: "https://roboco-io.github.io/vibecoding-workshop"
+lang: ko-KR
 
 theme: jekyll-theme-cayman
 repository: roboco-io/vibecoding-workshop
@@ -12,8 +13,10 @@ exclude:
   - Makefile
   - README.md
   - CLAUDE.md
+  - AGENTS.md
   - reference/
   - .omc/
+  - .superpowers/
   - vendor/
   - common/Makefile
   - common/presentation.md
@@ -30,5 +33,9 @@ exclude:
   - vibecoding-for-nondeveloper/presentation.md
   - vibecoding-for-nondeveloper/nondeveloper_servey_analysis.md
   - vibecoding-for-nondeveloper/6-pager.md
+  - vibecoding-for-nondeveloper/portfolio/README.md
+  - vibecoding-for-nondeveloper/projects/
+  - openspec/
+  - docs/
   - "*.pdf"
   - "*.pptx"
