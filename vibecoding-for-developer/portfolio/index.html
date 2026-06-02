@@ -204,6 +204,47 @@
           </div>
         </article>
 
+        <article class="showcase-item fade-in">
+          <div class="showcase-meta">
+            <div class="showcase-meta-num">04 / 05</div>
+            <h3 class="showcase-meta-title">품질 게이트</h3>
+            <div class="showcase-meta-row">
+              <span class="showcase-meta-label">정의</span>
+              <span class="showcase-meta-value">pre-commit / pre-push hook이 로컬에서 즉시 품질 검증을 강제한다</span>
+            </div>
+
+            <div class="showcase-block">
+              <div class="showcase-block-label">현재의 마찰</div>
+              <p class="showcase-problem">설문 33%가 CI 자동화 검사가 거의 없다고 답했다. 검사가 PR 머지 후나 배포 직전에 처음 발견되고, 33% 팀은 PR 자동 품질 게이트도 활용하지 않는다.</p>
+            </div>
+
+            <div class="showcase-block">
+              <div class="showcase-block-label">AI Level Boost</div>
+              <ol class="showcase-flow">
+                <li><strong>Friction 제거:</strong> AI가 03에서 만든 린트·테스트를 hook 스크립트로 묶어준다</li>
+                <li>pre-commit이 커밋마다 린트+단위 테스트, pre-push가 푸시 시 E2E+커버리지</li>
+                <li>복잡한 CI 파이프라인 없이 워크숍 직후 적용</li>
+                <li><strong>🎓 학습 가속:</strong> hook 동작을 통과/차단 양방향으로 시연해 학생이 게이트의 의미를 실전 체득</li>
+              </ol>
+            </div>
+
+            <div class="showcase-block">
+              <div class="showcase-block-label">산출물 + 지속 효과</div>
+              <ul class="showcase-outputs">
+                <li>.git/hooks/pre-commit · .git/hooks/pre-push</li>
+                <li>훅 공유 스크립트 (팀 배포용)</li>
+                <li>코드 품질이 사람에 의존하지 않고 프로세스에 의존</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="showcase-mockup">
+              <img src="assets/mockups/04-gate.svg" alt="품질 게이트 — git hook 통과·실패 시나리오 콘셉트" loading="lazy">
+            </div>
+            <p class="showcase-caption">💡 워크숍에서 만든 Git Hooks 패턴의 결과 콘셉트입니다</p>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
