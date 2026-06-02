@@ -244,23 +244,28 @@ pre:hover .copy-btn {
 document.addEventListener('DOMContentLoaded', function () {
 
   /* ── Navigation Bar ── */
+  var base = {{ site.baseurl | jsonify }};
   var nav = document.createElement('nav');
   nav.className = 'site-nav';
   nav.innerHTML = '<ul>' +
-    '<li><a href="/">Home</a></li>' +
-    '<li><a href="/presentation.html">Dev Slides</a></li>' +
-    '<li><a href="/common/narrative">Dev Narrative</a></li>' +
-    '<li><a href="/vibecoding-for-developer/student-guide">Dev Guide</a></li>' +
-    '<li><a href="/vibecoding-for-nondeveloper/presentation.html">Non-Dev Slides</a></li>' +
-    '<li><a href="/vibecoding-for-nondeveloper/student-guide">Non-Dev Guide</a></li>' +
+    '<li><a href="' + base + '/">Home</a></li>' +
+    '<li><a href="' + base + '/vibecoding-for-developer/portfolio/">Dev 랜딩</a></li>' +
+    '<li><a href="' + base + '/vibecoding-for-developer/student-guide">Dev Guide</a></li>' +
+    '<li><a href="' + base + '/presentation.html">Dev Slides</a></li>' +
+    '<li><a href="' + base + '/common/narrative">Dev Narrative</a></li>' +
+    '<li><a href="' + base + '/vibecoding-for-nondeveloper/portfolio/">Non-Dev 랜딩</a></li>' +
+    '<li><a href="' + base + '/vibecoding-for-nondeveloper/student-guide">Non-Dev Guide</a></li>' +
+    '<li><a href="' + base + '/vibecoding-for-nondeveloper/presentation.html">Non-Dev Slides</a></li>' +
     '</ul>';
   document.body.insertBefore(nav, document.body.firstChild);
 
   // Highlight active nav link
   var path = window.location.pathname.replace(/\/$/, '') || '/';
+  var baseStrip = base.replace(/\/$/, '') || '/';
   nav.querySelectorAll('a').forEach(function (a) {
     var href = a.getAttribute('href').replace(/\/$/, '') || '/';
-    if (path === href || (href !== '/' && path.indexOf(href) === 0)) {
+    var isHomeLink = href === baseStrip;
+    if (path === href || (!isHomeLink && path.indexOf(href) === 0)) {
       a.classList.add('active');
     }
   });
