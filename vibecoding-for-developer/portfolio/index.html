@@ -323,6 +323,77 @@
     </div>
   </section>
 
+  <!-- ====== §4 DORA Matrix ====== -->
+  <section class="matrix fade-in">
+    <div class="container">
+      <header class="matrix-header">
+        <h2 class="h1">자가 도입 팀이 무엇을 측정할 수 있게 되는가</h2>
+        <p class="text-secondary">5개 영역이 4개 DORA 지표에 어떻게 작용하는가</p>
+      </header>
+
+      <div class="matrix-table-wrap">
+        <table class="matrix-table matrix-dora">
+          <thead>
+            <tr>
+              <th>영역</th>
+              <th>배포 빈도</th>
+              <th>변경 리드타임</th>
+              <th>변경 실패율</th>
+              <th>MTTR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01 컨텍스트 엔지니어링</td>
+              <td class="matrix-cell-low">◯<span class="dora-label">Side</span></td>
+              <td class="matrix-cell-half">◐<span class="dora-label">Indirect</span></td>
+              <td class="matrix-cell-half">◐<span class="dora-label">Indirect</span></td>
+              <td class="matrix-cell-half">◐<span class="dora-label">Indirect</span></td>
+            </tr>
+            <tr>
+              <td>02 스펙 우선 개발</td>
+              <td class="matrix-cell-low">◯<span class="dora-label">Side</span></td>
+              <td class="matrix-cell-full">●<span class="dora-label">Direct</span></td>
+              <td class="matrix-cell-full">●<span class="dora-label">Direct</span></td>
+              <td class="matrix-cell-half">◐<span class="dora-label">Indirect</span></td>
+            </tr>
+            <tr>
+              <td>03 자동화 테스트 + 코드 품질</td>
+              <td class="matrix-cell-half">◐<span class="dora-label">Indirect</span></td>
+              <td class="matrix-cell-half">◐<span class="dora-label">Indirect</span></td>
+              <td class="matrix-cell-full">●<span class="dora-label">Direct</span></td>
+              <td class="matrix-cell-low">◯<span class="dora-label">Side</span></td>
+            </tr>
+            <tr>
+              <td>04 품질 게이트</td>
+              <td class="matrix-cell-half">◐<span class="dora-label">Indirect</span></td>
+              <td class="matrix-cell-half">◐<span class="dora-label">Indirect</span></td>
+              <td class="matrix-cell-full">●<span class="dora-label">Direct</span></td>
+              <td class="matrix-cell-half">◐<span class="dora-label">Indirect</span></td>
+            </tr>
+            <tr>
+              <td>05 팀 확산 플레이북</td>
+              <td class="matrix-cell-half">◐<span class="dora-label">Indirect</span></td>
+              <td class="matrix-cell-half">◐<span class="dora-label">Indirect</span></td>
+              <td class="matrix-cell-half">◐<span class="dora-label">Indirect</span></td>
+              <td class="matrix-cell-low">◯<span class="dora-label">Side</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="matrix-legend">
+        <span><span class="matrix-cell-full">●</span> Direct (직접)</span>
+        <span><span class="matrix-cell-half">◐</span> Indirect (간접)</span>
+        <span><span class="matrix-cell-low">◯</span> Side (부수)</span>
+      </div>
+
+      <p class="matrix-footnote">
+        DORA 4지표는 'AI 도입 효과'를 정량화하는 보편적 언어다. 워크숍은 측정 도구를 제공하지 않지만, 5개 영역이 각 지표에 어떻게 작용하는지를 명확히 한다. 측정 기반 구축이 필요한 팀에는 도입 후 후속 컨설팅으로 별도 지원한다.
+      </p>
+    </div>
+  </section>
+
   <script src="scripts.js" defer></script>
 </body>
 </html>
