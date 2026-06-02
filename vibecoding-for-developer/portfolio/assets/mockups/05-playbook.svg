@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" font-family="-apple-system, system-ui, sans-serif">
+  <rect width="1600" height="1000" fill="#FAFAFA"/>
+
+  <!-- Header -->
+  <rect x="40" y="40" width="1520" height="60" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <circle cx="68" cy="70" r="8" fill="#5B5BD6"/>
+  <text x="86" y="75" font-size="20" font-weight="600" fill="#0A0A0A">팀 확산 플레이북</text>
+  <text x="1500" y="75" font-size="18" fill="#71717A" text-anchor="end">auto-generated · 워크숍 종료 직후</text>
+
+  <!-- Left: tutorial preview (1/2) -->
+  <rect x="40" y="120" width="740" height="840" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="68" y="160" font-size="22" font-weight="600" fill="#0A0A0A">📄 4시간 워크숍 재현 가이드</text>
+  <text x="68" y="190" font-size="16" fill="#71717A">Claude Code 세션 로그 → 튜토리얼 자동 변환</text>
+
+  <text x="68" y="240" font-size="20" font-weight="600" fill="#525252">목차</text>
+  <g font-size="22" fill="#0A0A0A">
+    <text x="68" y="280">1. 오프닝 &amp; 환경 확인 (20분)</text>
+    <text x="68" y="320">2. 문서화 (80분)</text>
+  </g>
+  <rect x="60" y="335" width="720" height="50" rx="6" fill="#EEF0FF"/>
+  <text x="68" y="367" font-size="22" font-weight="600" fill="#5B5BD6">3. 자동화 테스트 (70분) ⬅ 현재</text>
+  <g font-size="22" fill="#0A0A0A">
+    <text x="68" y="420">4. CI/CD 구축 (50분)</text>
+    <text x="68" y="460">5. 마무리: 튜토리얼 &amp; migration-plan (20분)</text>
+  </g>
+
+  <line x1="68" y1="500" x2="752" y2="500" stroke="#E5E7EB"/>
+
+  <text x="68" y="540" font-size="20" font-weight="600" fill="#525252">3. 자동화 테스트 — 본문 발췌</text>
+  <g font-family="SF Mono, Menlo, monospace" font-size="20" fill="#0A0A0A">
+    <text x="68" y="580">$ openspec propose articles/tags</text>
+    <text x="68" y="620">$ /skill openspec-to-tests articles</text>
+  </g>
+
+  <text x="68" y="680" font-size="20" fill="#0A0A0A">→ AI가 사양 기반 테스트 12개 생성</text>
+  <text x="68" y="710" font-size="20" fill="#0A0A0A">→ 사람 검수 후 `make test-unit`</text>
+
+  <rect x="68" y="740" width="680" height="160" rx="6" fill="#F5F5F5"/>
+  <text x="88" y="775" font-size="18" fill="#525252" font-style="italic">[스크린샷]</text>
+  <text x="88" y="810" font-size="18" fill="#71717A">make test 실행 결과</text>
+  <text x="88" y="850" font-size="18" fill="#71717A">✓ 124 passed, coverage 82%</text>
+
+  <!-- Right: migration-plan.md (1/2) -->
+  <rect x="800" y="120" width="760" height="840" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="828" y="160" font-size="22" font-weight="600" fill="#0A0A0A">📄 migration-plan.md</text>
+  <text x="828" y="190" font-size="16" fill="#71717A">우리 팀 전환 계획서 · generate-plan 스킬 출력</text>
+
+  <text x="828" y="240" font-size="20" font-weight="600" fill="#525252">4주 로드맵</text>
+
+  <!-- W1 -->
+  <rect x="828" y="260" width="700" height="140" rx="6" fill="#EEF0FF"/>
+  <text x="848" y="295" font-size="22" font-weight="600" fill="#5B5BD6">W1 · 컨텍스트 + 스펙 도입</text>
+  <text x="848" y="330" font-size="18" fill="#0A0A0A">담당: TL · 산출물: CLAUDE.md, OpenSpec init</text>
+  <text x="848" y="360" font-size="18" fill="#0A0A0A">위험: 기존 docs/와 중복 → 정리 필요</text>
+  <text x="848" y="388" font-size="18" fill="#71717A">예상 시간: 4시간 / 팀원 한 명</text>
+
+  <!-- W2 -->
+  <rect x="828" y="420" width="700" height="140" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="848" y="455" font-size="22" font-weight="600" fill="#0A0A0A">W2 · 테스트 자동화 (1개 모듈 시범)</text>
+  <text x="848" y="490" font-size="18" fill="#0A0A0A">담당: 백엔드 1명 · 산출물: UT + E2E + Makefile</text>
+  <text x="848" y="520" font-size="18" fill="#0A0A0A">위험: 기존 테스트와 패턴 충돌</text>
+  <text x="848" y="548" font-size="18" fill="#71717A">예상 시간: 8시간</text>
+
+  <!-- W3 -->
+  <rect x="828" y="580" width="700" height="140" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="848" y="615" font-size="22" font-weight="600" fill="#0A0A0A">W3 · Git Hooks 팀 전체 배포</text>
+  <text x="848" y="650" font-size="18" fill="#0A0A0A">담당: TL · 산출물: pre-commit / pre-push 공유</text>
+  <text x="848" y="680" font-size="18" fill="#0A0A0A">위험: 로컬 환경 차이 → 검증 절차 필요</text>
+  <text x="848" y="708" font-size="18" fill="#71717A">예상 시간: 4시간 + 팀원 적용 시간</text>
+
+  <!-- W4 -->
+  <rect x="828" y="740" width="700" height="140" rx="6" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="848" y="775" font-size="22" font-weight="600" fill="#0A0A0A">W4 · 효과 측정 + 회고</text>
+  <text x="848" y="810" font-size="18" fill="#0A0A0A">담당: 전원 · 산출물: 측정 리포트, 회고록</text>
+  <text x="848" y="840" font-size="18" fill="#0A0A0A">베이스라인: PR 리드타임, 결함 유입률</text>
+  <text x="848" y="868" font-size="18" fill="#71717A">예상 시간: 2시간 회의 + 집계</text>
+
+  <text x="828" y="920" font-size="18" fill="#71717A">총 4주 — 팀별 환경에 따라 ±1주 조정</text>
+
+  <text x="1560" y="990" font-size="14" fill="#A3A3A3" text-anchor="end">ROBOCO ✕ Vibe Coding Workshop</text>
+</svg>
