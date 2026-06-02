@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="-apple-system, system-ui, sans-serif">
+  <!-- Dark background -->
+  <rect width="1200" height="630" fill="#0A0A0A"/>
+
+  <!-- Indigo accent bar -->
+  <rect x="0" y="0" width="8" height="630" fill="#5B5BD6"/>
+
+  <!-- Eyebrow -->
+  <text x="80" y="180" font-size="22" font-weight="500" fill="#818CF8" letter-spacing="0.05em">개발자 바이브 코딩 워크숍</text>
+
+  <!-- Headline -->
+  <text x="80" y="270" font-size="56" font-weight="700" fill="#FAFAFA">AI가 소프트웨어 엔지니어링 수준을</text>
+  <text x="80" y="340" font-size="56" font-weight="700" fill="#FAFAFA">적은 비용·짧은 기간에 끌어올립니다</text>
+
+  <!-- Sub -->
+  <text x="80" y="420" font-size="24" fill="#A3A3A3">스택 무관 · 4시간 · 시니어 개발자 10~20명 · Claude 기반</text>
+
+  <!-- Brand -->
+  <text x="80" y="540" font-size="32" font-weight="700" fill="#5B5BD6" letter-spacing="0.05em">ROBOCO</text>
+  <text x="240" y="540" font-size="18" fill="#525252">✕ Vibe Coding Workshop</text>
+</svg>
