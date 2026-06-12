@@ -5,3 +5,4 @@ _site/
 Gemfile.lock
 common/presentation.html
 .handoff.md
+.superpowers/
