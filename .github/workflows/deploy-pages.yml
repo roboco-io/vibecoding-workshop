@@ -50,6 +50,13 @@ jobs:
           mkdir -p _site/vibecoding-for-nondeveloper
           cp vibecoding-for-nondeveloper/presentation.html _site/vibecoding-for-nondeveloper/presentation.html
 
+      - name: Inject Google Analytics into MARP slides
+        run: |
+          for f in _site/presentation.html _site/vibecoding-for-nondeveloper/presentation.html; do
+            grep -q 'G-9G1SGM9SZQ' "$f" || perl -0pi -e 'BEGIN{local $/; open my $fh, "<", "_includes/google-analytics.html" or die; $ga = <$fh>} s{</head>}{$ga</head>}' "$f"
+            grep -q 'G-9G1SGM9SZQ' "$f"
+          done
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
 
